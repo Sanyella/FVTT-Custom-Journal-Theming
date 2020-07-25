@@ -9,7 +9,8 @@ reach out with a solution on how to do that, it would be greatly appreciated!
 Otherwise, see below for the general variables you can set to better customize
 your experience, whether it is to get that unique Sci-Fi look, make a
 dark theme or log your adventures in a cuter, funnier or grimer theme. Have fun!
-                                                        - Sanyella
+
+Sanyella
 
 ## Personalizing your journals
 
@@ -26,5 +27,4 @@ permanence of any of your changes, though updates aren't likely to come up all
 that often for this little module, they might still happen (such as perhaps to 
 introduce such theming) and ANY CHANGES YOU WOULD HAVE MADE WOULD BE LOST.
 
-> **PLEASE SAVE ANY CHANGES YOU WANT TO KEEP OUTSIDE OF THE MODULE TO SET THOSE
-> BACK IN CASE OF A MODULE UPDATE.**
+> **PLEASE SAVE ANY CHANGES YOU WANT TO KEEP OUTSIDE OF THE MODULE TO SET THOSE BACK IN CASE OF A MODULE UPDATE.**
