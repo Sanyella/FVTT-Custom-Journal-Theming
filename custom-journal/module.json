@@ -1,0 +1,23 @@
+{
+	"name": "custom-journal",
+	"title": "Custom Journal",
+	"description": "A custom take on the appearance of journal entries.",
+	"version": "0.0.1",
+	"author": "Sanyella",
+	"systems": [
+		"dnd5e"
+	],
+	"scripts": [],
+	"styles": [
+		"custom-journal.css"
+	],
+	"esmodules": [
+		"custom-journal.js"
+	],
+	"packs": [],
+	"url": "",
+	"manifest": "",
+	"download": "",
+	"compatibleCoreVersion": "0.6.5",
+	"minimumCoreVersion": "0.6.5"
+}
