@@ -4,21 +4,19 @@
 	"description": "A custom take on the appearance of journal entries.",
 	"version": "0.0.1",
 	"author": "Sanyella",
-	"systems": [
-		"dnd5e"
-	],
 	"scripts": [],
 	"styles": [
-		"custom-journal.css",
-		"ui/Anglo-text/stylesheet.css"
+		"styles/custom-journal.css",
+		"fonts/Anglo-text/stylesheet.css"
 	],
 	"esmodules": [
-		"custom-journal.js"
+		"scripts/custom-journal.js"
 	],
 	"packs": [],
-	"url": "",
-	"manifest": "",
+	"url": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming",
+	"manifest": "https://raw.githubusercontent.com/Sanyella/FVTT-Custom-Journal-Theming/master/custom-journal/module.json",
 	"download": "",
+	"bugs": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming/issues",
 	"compatibleCoreVersion": "0.6.5",
 	"minimumCoreVersion": "0.6.5"
 }
