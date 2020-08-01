@@ -12,12 +12,17 @@
 
     Personalizing your journals
     *************************************
-    If you want to customize the look of your journals, you can simply
-    modify these values for a uniform change. It is unrecommended to individually
+    If you want to customize the look of your journals, you can simply modify the
+    variables' values for a uniform change. It is unrecommended to individually
     change values for elements, as these changes can become hard to track and to
     keep uniform, but the power is in your hands! It is after all quite possible 
     that my original settings do not allow for the exact thing you want, or we do 
     not perfectly agree on what belongs as an "accent", and that's ok :)
+
+    Different things that cannot be parametherized with variables are also in there,
+    I've tried to tag the most interesting ones with OPTION to make them easily 
+    searchable (do you want drop caps at the beginning of your paragraphs, for 
+    instance?).
     
     A final word of warning:
     Especially since there is currently no concept of multiple "themes" and no
@@ -27,50 +32,152 @@
 
     ###############################################################################
     # PLEASE SAVE ANY CHANGES YOU WANT TO KEEP OUTSIDE OF THE MODULE TO SET THOSE #
-    # BACK IN CASE OF A MODULE UPDATE.                                                  #
+    # BACK IN CASE OF A MODULE UPDATE.                                            #
     ###############################################################################
+
+    Thanks, attributions & links
+    *************************************
+    Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+    and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+    which have both helped me tremendously in understanding how to structure my own
+    module.
+    Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+    For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+    And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+
+
 */
 
 /*
-    Variables for uniform colour control
+    Variables for uniform color control
+    Using an editor like VSCode which has a built in color picker
+    or an external ressource that gives you the hexadecimal color 
+    code from a color picker is recommended
 */
 body {
-    --base-text-colour: #5177ab;
-    --header-colour: #bfbfbf;
-    --base-accent-colour: #5177ab;
-    --background-color: #252525;
-    --background-hover-color: #363636;
+    --header-color: #bfbfbf;
+    --base-text-color: #36acf0;
+    --link-color: #65eea2;
+    --link-visited-color: #002394;
+
+    --base-accent-color: #002394;
     
-    --background-texture-image: url(https://designshack.net/wp-content/uploads/black-texture-background-368x245.jpg);
+    --window-text-color: #bfbfbf;
+    --button-background-color: #1a1a1a;
+    --button-hover-color: #272727;
+    
+    --background-color: #333333;
+    --background-texture-image: url(./ui/dark-background-1.jpg);
 }
 
 /*
 	Headers and text
 */
 
-.pretty-story h2,
-.pretty-story h1 {
-    border-bottom: 1px solid var(--base-accent-colour);
-    color: var(--header-colour);
+.custom-journal h2,
+.custom-journal h1 {
+    border-bottom: 1px solid var(--base-accent-color);
+    color: var(--header-color);
 }
 
-.pretty-story p {
-    color: #5177ab;
+.custom-journal .editor-content>h3 {
+    color: var(--header-color);
 }
+
+.custom-journal .editor-content>p {
+    color: var(--base-text-color);
+}
+
+/* bullet-point list */
+.custom-journal .editor-content>ul {
+  color: var(--base-text-color);
+}
+
+
 
 /*
-    Buttons and highlights
+    Special text and highlights
 */
+
+
+
+/* Links (internet) */
+.custom-journal a:link {
+    color: var(--link-color);
+}
+
+.custom-journal a:visited {
+    color: var(--link-visited-color);
+}
+
+/* Links (entity, rolls) */
+.custom-journal a.entity-link, a.inline-roll {
+    background-color: var(--button-background-color);
+
+}
+
+/* 
+    OPTION Drop cap - you can add font and color options to this block, too!
+    Changing sizes and fonts might require you to test and tweak quite a bit
+    to get exactly the effect you want, but hey, drop caps are cool! 
+*/
+.custom-journal p::first-letter {
+    float: left;
+    font-family: 'anglo_textregular';
+    font-size: 3em;
+    line-height: 0.8em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
 
 /*
     Background and various window elements
 */
 
-.pretty-story .window-content {
-    background: var(--background-texture-image);
-    color: var(--background-color);
+/* Journal title */
+.custom-journal .window-content input[type="text"] {
+    color: var(--header-color);
 }
 
-.pretty-story .editor-content>ul {
-  color: var(--base-text-colour);
+/* Background */
+.custom-journal .window-content {
+    background: var(--background-texture-image);
+}
+
+.custom-journal button {
+    background-color: var(--button-background-color);
+    color: var(--window-text-color);
+    border-color: var(--button-hover-color);
+}
+
+.custom-journal button:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: 0 0 10px var(--base-accent-color);    
+}
+
+/* 
+    Editor
+*/
+
+/* Background */
+.custom-journal .editor .tox-edit-area {
+    background: var(--background-texture-image);
+}
+
+/* Buttons in edit mode */
+.custom-journal .editor button {
+    color: var(--base-text-color);
+    background-color: var(--button-background-color);
+}
+
+/* Header bar where the buttons are in edit mode */
+.custom-journal .editor .tox-editor-header {
+    background-color: var(--background-color);
+}
+
+/* Button to go into edit mode */
+.custom-journal .editor-edit {
+    color: var(--base-text-color);
+    background-color: var(--button-background-color);
 }

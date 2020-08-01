@@ -9,7 +9,8 @@
 	],
 	"scripts": [],
 	"styles": [
-		"custom-journal.css"
+		"custom-journal.css",
+		"ui/Anglo-text/stylesheet.css"
 	],
 	"esmodules": [
 		"custom-journal.js"
