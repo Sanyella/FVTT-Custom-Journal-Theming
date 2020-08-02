@@ -28,3 +28,20 @@ that often for this little module, they might still happen (such as perhaps to
 introduce such theming) and ANY CHANGES YOU WOULD HAVE MADE WOULD BE LOST.
 
 > **PLEASE SAVE ANY CHANGES YOU WANT TO KEEP OUTSIDE OF THE MODULE TO SET THOSE BACK IN CASE OF A MODULE UPDATE.**
+
+## Thanks, attributions & links
+
+Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+which have both helped me tremendously in understanding how to structure my own
+module.
+
+Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
+
+Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+
+For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+
+And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+
+Dark background: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
