@@ -41,6 +41,7 @@
     and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
     which have both helped me tremendously in understanding how to structure my own
     module.
+    Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
     Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
     For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
     And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
@@ -57,18 +58,19 @@
 */
 body {
     --header-color: #bfbfbf;
-    --base-text-color: #36acf0;
-    --link-color: #65eea2;
-    --link-visited-color: #002394;
+    --base-text-color: #bfbfbf;
+    --link-color: #3b56b1;
+    --link-visited-color: #405494;
 
     --base-accent-color: #002394;
+    --light-accent-color: #1b47d6;
     
     --window-text-color: #bfbfbf;
     --button-background-color: #1a1a1a;
     --button-hover-color: #272727;
     
     --background-color: #a5afb4bb;
-    --background-texture-image: url(./textures/dark-background-1.jpg);
+    --background-texture-image: url(../textures/dark-background-1.jpg);
 }
 
 /************************************************
@@ -109,6 +111,11 @@ body {
 
 .custom-journal a:visited {
     color: var(--link-visited-color);
+}
+
+.custom-journal a:hover {
+    color: var(--link-color);
+    text-shadow: 0px 0px 2px var(--light-accent-color);
 }
 
 /* Links (entity, rolls) */
