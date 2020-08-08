@@ -11,9 +11,10 @@ library of two themes in addition to the original Foundry look.
 
 If you encounter any bug or want to suggest improvements, don't hesitate to tell me either 
 here through the issues or on Discord (do tag me if reaching out through the Foundry Discord
-if you want me to see your message @Sanyella#3760). I'll do my best to fix these issues as 
-fast as possible, but do take note that it may still take a certain time before I have the 
-time to fix something.
+if you want me to see your message @Sanyella#3760). Do take into account though that this is
+still an early version which needs a lot more work. I'll do my best to fix these issues as 
+fast as possible, but take note that it may still take a certain time before I have the time 
+to fix something.
 
 - **Bug**: The drop down for the "default" journal sheet doesn't currently work. I have yet to 
 find out why, so please be patient. Rest assured, individual sheet themes *are* working.
