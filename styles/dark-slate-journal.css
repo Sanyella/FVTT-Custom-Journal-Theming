@@ -1,0 +1,170 @@
+/*
+
+    Thanks, attributions & links
+    *************************************
+    Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+    and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+    which have both helped me tremendously in understanding how to structure my own
+    module.
+    Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
+    Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+        For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+        And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+
+*/
+
+/*
+    Variables for uniform color control
+*/
+body {
+    --dark-slate-header-color: #bfbfbf;
+    --dark-slate-base-text-color: #bfbfbf;
+    --dark-slate-link-color: #3b56b1;
+    --dark-slate-link-visited-color: #405494;
+
+    --dark-slate-base-accent-color: #002394;
+    --dark-slate-light-accent-color: #1b47d6;
+    
+    --dark-slate-window-text-color: #bfbfbf;
+    --dark-slate-button-background-color: #1a1a1a;
+    --dark-slate-button-hover-color: #272727;
+    
+    --dark-slate-background-color: #a5afb4bb;
+    --dark-slate-background-texture-image: url(../textures/dark-background-1.jpg);
+}
+
+/************************************************
+	Headers and text
+************************************************/
+
+.dark-slate-journal h2,
+.dark-slate-journal h1 {
+    border-bottom: 1px solid var(--dark-slate-base-accent-color);
+    color: var(--dark-slate-header-color);
+}
+
+.dark-slate-journal .editor-content>h3 {
+    color: var(--dark-slate-header-color);
+}
+
+.dark-slate-journal .editor-content>p {
+    color: var(--dark-slate-base-text-color);
+}
+
+/* bullet-point list */
+.dark-slate-journal .editor-content>ul {
+  color: var(--dark-slate-base-text-color);
+}
+
+
+
+/************************************************
+    Special text and highlights
+************************************************/
+
+
+
+/* Links (internet) */
+.dark-slate-journal a:link {
+    color: var(--dark-slate-link-color);
+}
+
+.dark-slate-journal a:visited {
+    color: var(--dark-slate-link-visited-color);
+}
+
+.dark-slate-journal a:hover {
+    color: var(--dark-slate-link-color);
+    text-shadow: 0px 0px 2px var(--dark-slate-light-accent-color);
+}
+
+/* Links (entity, rolls) */
+.dark-slate-journal a.entity-link, a.inline-roll {
+    background-color: var(--dark-slate-button-background-color);
+
+}
+
+/* 
+    OPTION Drop cap - you can add font and color options to this block, too!
+    Changing sizes and fonts might require you to test and tweak quite a bit
+    to get exactly the effect you want, but hey, drop caps are cool! 
+*/
+.dark-slate-journal p::first-letter {
+    float: left;
+    font-family: 'anglo_textregular';
+    font-size: 3em;
+    line-height: 0.8em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    color: var(--dark-slate-header-color);
+}
+
+/************************************************
+    Background and various window elements
+************************************************/
+
+/* Journal title */
+.dark-slate-journal .window-content input[type="text"] {
+    color: var(--dark-slate-header-color);
+}
+
+/* Background */
+.dark-slate-journal .window-content {
+    background: var(--dark-slate-background-texture-image);
+}
+
+.dark-slate-journal button {
+    background-color: var(--dark-slate-button-background-color);
+    color: var(--dark-slate-window-text-color);
+    border-color: var(--dark-slate-button-hover-color);
+}
+
+.dark-slate-journal button:hover {
+    background-color: var(--dark-slate-button-hover-color);
+    box-shadow: 0 0 10px var(--dark-slate-base-accent-color);    
+}
+
+/************************************************
+    Editor 
+    OPTION - depending on if you want the editing experience to be more or less
+    the same as the modified presentation, or a more streamlined editing look, it
+    is her that you should look to enable, disable, or tweak things.
+************************************************/
+
+/* Background */
+.dark-slate-journal .editor .tox-edit-area {
+    /* background: var(--dark-slate-background-texture-image); */
+    background-color: var(--dark-slate-background-color);
+}
+
+/* Buttons in edit mode */
+.dark-slate-journal .editor button {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-button-background-color);
+}
+
+.dark-slate-journal .editor button:hover {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-button-hover-color);
+}
+
+/* Header bar where the buttons are in edit mode */
+.dark-slate-journal .editor .tox-toolbar-overlord,
+.dark-slate-journal .editor .tox-toolbar__primary {
+    background-color: var(--dark-slate-background-color);
+}
+
+/* Button to go into edit mode */
+.dark-slate-journal .editor-edit {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-button-background-color);
+}
+
+/* Allows for the button images to be in colour */
+.dark-slate-journal .tox :not(svg):not(rect) {
+	fill: var(--dark-slate-base-text-color);
+	color: var(--dark-slate-base-text-color);
+}
+

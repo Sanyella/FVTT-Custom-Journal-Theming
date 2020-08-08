@@ -2,11 +2,12 @@
 	"name": "custom-journal",
 	"title": "Custom Journal",
 	"description": "A custom take on the appearance of journal entries.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "Sanyella",
 	"scripts": [],
 	"styles": [
-		"styles/custom-journal.css",
+		"styles/dark-slate-journal.css",
+		"styles/handwritten-letter.css",
 		"fonts/Anglo-text/stylesheet.css",
 		"fonts/Lovers-Quarrel/stylesheet.css"
 	],

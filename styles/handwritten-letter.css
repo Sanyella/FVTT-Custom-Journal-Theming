@@ -1,0 +1,61 @@
+/*
+    Thanks, attributions & links
+    *************************************
+    Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+    and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+    which have both helped me tremendously in understanding how to structure my own
+    module.
+    Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
+    Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+        For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+        And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+
+*/
+body {
+    --handwritten-background-texture-image: url(../textures/parchment-1.jpg);
+
+    --handwritten-base-font: 'lovers_quarrelregular'
+}
+
+/************************************************
+	Headers and text
+************************************************/
+
+.handwritten-letter h1,
+.handwritten-letter h2,
+.handwritten-letter .editor-content>h3,
+.handwritten-letter .editor-content>p,
+.handwritten-letter .editor-content>ul {
+    border-bottom: 0px;
+    font-family: var(--handwritten-base-font);
+    line-height: 85%;
+}
+
+.handwritten-letter h1 {
+    font-size: 3em;
+}
+
+.handwritten-letter h2 {
+    font-size: 2.8em;
+}
+
+.handwritten-letter .editor-content>h3 {
+    font-size: 2.4em;
+}
+
+.handwritten-letter .editor-content>p,
+.handwritten-letter .editor-content>ul {
+    font-size: 2.2em;
+}
+
+/************************************************
+    Background and various window elements
+************************************************/
+
+/* Background */
+.handwritten-letter .window-content {
+    background: var(--handwritten-background-texture-image);
+}
+

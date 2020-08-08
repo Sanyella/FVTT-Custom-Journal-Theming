@@ -43,57 +43,59 @@
     module.
     Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
     Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
-    For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
-    And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
-    Dark background: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
-
+        For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+        And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
 
 */
 
 /*
     Variables for uniform color control
-    Using an editor like VSCode which has a built in color picker
-    or an external ressource that gives you the hexadecimal color 
-    code from a color picker is recommended
+    Using an editor like VSCode which has a built in color picker or an external 
+    ressource that gives you the hexadecimal color code from a color picker is 
+    recommended. Be careful too to give them a name unique to your theme so as to 
+    not encounter any problems with properties overriding one another (just 
+    search-and-replace the "--template-" pattern)
 */
 body {
-    --header-color: #bfbfbf;
-    --base-text-color: #bfbfbf;
-    --link-color: #3b56b1;
-    --link-visited-color: #405494;
+    --template-header-color: #bfbfbf;
+    --template-base-text-color: #bfbfbf;
+    --template-link-color: #3b56b1;
+    --template-link-visited-color: #405494;
 
-    --base-accent-color: #002394;
-    --light-accent-color: #1b47d6;
+    --template-base-accent-color: #002394;
+    --template-light-accent-color: #1b47d6;
     
-    --window-text-color: #bfbfbf;
-    --button-background-color: #1a1a1a;
-    --button-hover-color: #272727;
+    --template-window-text-color: #bfbfbf;
+    --template-button-background-color: #1a1a1a;
+    --template-button-hover-color: #272727;
     
-    --background-color: #a5afb4bb;
-    --background-texture-image: url(../textures/dark-background-1.jpg);
+    --template-background-color: #a5afb4bb;
+    --template-background-texture-image: url(../textures/dark-background-1.jpg);
 }
 
 /************************************************
 	Headers and text
 ************************************************/
 
-.custom-journal h2,
-.custom-journal h1 {
-    border-bottom: 1px solid var(--base-accent-color);
-    color: var(--header-color);
+.template-journal h2,
+.template-journal h1 {
+    border-bottom: 1px solid var(--template-base-accent-color);
+    color: var(--template-header-color);
 }
 
-.custom-journal .editor-content>h3 {
-    color: var(--header-color);
+.template-journal .editor-content>h3 {
+    color: var(--template-header-color);
 }
 
-.custom-journal .editor-content>p {
-    color: var(--base-text-color);
+.template-journal .editor-content>p {
+    color: var(--template-base-text-color);
 }
 
 /* bullet-point list */
-.custom-journal .editor-content>ul {
-  color: var(--base-text-color);
+.template-journal .editor-content>ul {
+  color: var(--template-base-text-color);
 }
 
 
@@ -105,22 +107,22 @@ body {
 
 
 /* Links (internet) */
-.custom-journal a:link {
-    color: var(--link-color);
+.template-journal a:link {
+    color: var(--template-link-color);
 }
 
-.custom-journal a:visited {
-    color: var(--link-visited-color);
+.template-journal a:visited {
+    color: var(--template-link-visited-color);
 }
 
-.custom-journal a:hover {
-    color: var(--link-color);
-    text-shadow: 0px 0px 2px var(--light-accent-color);
+.template-journal a:hover {
+    color: var(--template-link-color);
+    text-shadow: 0px 0px 2px var(--template-light-accent-color);
 }
 
 /* Links (entity, rolls) */
-.custom-journal a.entity-link, a.inline-roll {
-    background-color: var(--button-background-color);
+.template-journal a.entity-link, a.inline-roll {
+    background-color: var(--template-button-background-color);
 
 }
 
@@ -129,14 +131,14 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
-.custom-journal p::first-letter {
+.template-journal p::first-letter {
     float: left;
     font-family: 'anglo_textregular';
     font-size: 3em;
     line-height: 0.8em;
     padding-top: 0em;
     padding-bottom: 0em;
-    color: var(--header-color);
+    color: var(--template-header-color);
 }
 
 /************************************************
@@ -144,24 +146,24 @@ body {
 ************************************************/
 
 /* Journal title */
-.custom-journal .window-content input[type="text"] {
-    color: var(--header-color);
+.template-journal .window-content input[type="text"] {
+    color: var(--template-header-color);
 }
 
 /* Background */
-.custom-journal .window-content {
-    background: var(--background-texture-image);
+.template-journal .window-content {
+    background: var(--template-background-texture-image);
 }
 
-.custom-journal button {
-    background-color: var(--button-background-color);
-    color: var(--window-text-color);
-    border-color: var(--button-hover-color);
+.template-journal button {
+    background-color: var(--template-button-background-color);
+    color: var(--template-window-text-color);
+    border-color: var(--template-button-hover-color);
 }
 
-.custom-journal button:hover {
-    background-color: var(--button-hover-color);
-    box-shadow: 0 0 10px var(--base-accent-color);    
+.template-journal button:hover {
+    background-color: var(--template-button-hover-color);
+    box-shadow: 0 0 10px var(--template-base-accent-color);    
 }
 
 /************************************************
@@ -172,37 +174,37 @@ body {
 ************************************************/
 
 /* Background */
-.custom-journal .editor .tox-edit-area {
-    /* background: var(--background-texture-image); */
-    background-color: var(--background-color);
+.template-journal .editor .tox-edit-area {
+    /* background: var(--template-background-texture-image); */
+    background-color: var(--template-background-color);
 }
 
 /* Buttons in edit mode */
-.custom-journal .editor button {
-    color: var(--base-text-color);
-    background-color: var(--button-background-color);
+.template-journal .editor button {
+    color: var(--template-base-text-color);
+    background-color: var(--template-button-background-color);
 }
 
-.custom-journal .editor button:hover {
-    color: var(--base-text-color);
-    background-color: var(--button-hover-color);
+.template-journal .editor button:hover {
+    color: var(--template-base-text-color);
+    background-color: var(--template-button-hover-color);
 }
 
 /* Header bar where the buttons are in edit mode */
-.custom-journal .editor .tox-toolbar-overlord,
-.custom-journal .editor .tox-toolbar__primary {
-    background-color: var(--background-color);
+.template-journal .editor .tox-toolbar-overlord,
+.template-journal .editor .tox-toolbar__primary {
+    background-color: var(--template-background-color);
 }
 
 /* Button to go into edit mode */
-.custom-journal .editor-edit {
-    color: var(--base-text-color);
-    background-color: var(--button-background-color);
+.template-journal .editor-edit {
+    color: var(--template-base-text-color);
+    background-color: var(--template-button-background-color);
 }
 
 /* Allows for the button images to be in colour */
-.custom-journal .tox :not(svg):not(rect) {
-	fill: var(--base-text-color);
-	color: var(--base-text-color);
+.template-journal .tox :not(svg):not(rect) {
+	fill: var(--template-base-text-color);
+	color: var(--template-base-text-color);
 }
 
