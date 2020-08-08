@@ -3,9 +3,11 @@
 Welcome to your own personal playground to design your own wonderful-looking journals! 
 Not only did I want to make journals more interesting, I also wanted to to allow them
 to be selectively themed, much like actors can. This is now possible, with a current 
-library of two themes in addition to the original
+library of two themes in addition to the original Foundry look.
 
 Sanyella
+
+
 
 ## Known Issues
 
