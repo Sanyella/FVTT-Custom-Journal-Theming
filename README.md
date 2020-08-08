@@ -1,47 +1,72 @@
 # FVTT Custom Journal Theming - The Journals of your Dreams!
 
-Welcome to the inner sanctum of your own personal playground to design your
-own wonderful-looking journals! Having mutliple different active journal 
-themes (much like say, character sheets in the D&D 5e system) is something 
-I eventually want to tackle, but is not yet implemented as journals are not
-natively extensible the same way, as far as I've seen, so if anyone wants to
-reach out with a solution on how to do that, it would be greatly appreciated!
-Otherwise, see below for the general variables you can set to better customize
-your experience, whether it is to get that unique Sci-Fi look, make a
-dark theme or log your adventures in a cuter, funnier or grimer theme. Have fun!
+Welcome to your own personal playground to design your own wonderful-looking journals! 
+Not only did I want to make journals more interesting, I also wanted to to allow them
+to be selectively themed, much like actors can. This is now possible, with a current 
+library of two themes in addition to the original
 
 Sanyella
 
+## Known Issues
+
+If you encounter any bug or want to suggest improvements, don't hesitate to tell me either 
+here through the issues or on Discord (do tag me if reaching out through the Foundry Discord
+if you want me to see your message @Sanyella#3760). I'll do my best to fix these issues as 
+fast as possible, but do take note that it may still take a certain time before I have the 
+time to fix something.
+
+- **Bug**: The drop down for the "default" journal sheet doesn't currently work. I have yet to 
+find out why, so please be patient. Rest assured, individual sheet themes *are* working.
+
+- **Compatibility issue**: The PopOut! button doesn't appear on journals when using this module.
+This one I personally really want to fix, but haven't yet had time, so I'll try to tackle it
+as soon as possible.
+
+*Theme-specific issues aren't going to be listed here, but will be available and appropriately 
+tagged in the GitHub issues.*
+
 ## Personalizing your journals
 
-If you want to customize the look of your journals, you can simply
-modify these values for a uniform change. It is unrecommended to individually
-change values for elements, as these changes can become hard to track and to
-keep uniform, but the power is in your hands! It is after all quite possible 
-that my original settings do not allow for the exact thing you want, or we do 
-not perfectly agree on what belongs as an "accent", and that's ok :)
+If you want to customize the look of your journals, you can edit an existing theme,
+you can simply tweak values, or you can create your own theme, following the instructions
+in the styles/templates.css and the scripts/custom-journal.js files. Don't forget to add
+any extra file you create to the module.json as well so it loads.
 
 A final word of warning:
-Especially since there is currently no concept of multiple "themes" and no
-permanence of any of your changes, though updates aren't likely to come up all
-that often for this little module, they might still happen (such as perhaps to 
-introduce such theming) and ANY CHANGES YOU WOULD HAVE MADE WOULD BE LOST.
+BE WARNED: Since there isn't any way to save changes made to a module from updates
+(such as perhaps to introduce more themes), updating may mean ANY CHANGES YOU WOULD HAVE MADE WOULD BE LOST.
 
-> **PLEASE SAVE ANY CHANGES YOU WANT TO KEEP OUTSIDE OF THE MODULE TO SET THOSE BACK IN CASE OF A MODULE UPDATE.**
+> **PLEASE BACKUP ANY CHANGES YOU WANT TO KEEP OUTSIDE OF THE MODULE TO SET THOSE BACK IN CASE OF A MODULE UPDATE.**
+
+This is of course by no mean ideal, and I'll try to bring more themes natively to limit the 
+need for individual creation of such themes, but I do understand many will probably still 
+want to make their own, and as such I do try to guide you though it so my work can help you.
+Provided they do not introduce fonts or textures I cannot distribute and they are of good quality,
+I might also be open to adding your styles, if you so wish. Just reach out to me in Discord 
+(Sanyella#3760) or right here if you're confident to submit a pull request.
 
 ## Thanks, attributions & links
+
+### Contributors & Inspiration
 
 Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
 and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
 which have both helped me tremendously in understanding how to structure my own
-module.
+module. Of course, also a huge thanks to Atropos for bringing Foundry VTT to life, in all its
+awesomness and in such an open way, with code easy to navigate and understand.
+
+### Fonts
 
 Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
 
 Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
 
-For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+  For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
 
-And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+  And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+  
+### Textures
 
-Dark background: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    
+Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
