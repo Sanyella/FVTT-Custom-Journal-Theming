@@ -5,7 +5,7 @@ Not only did I want to make journals more interesting, I also wanted to to allow
 to be selectively themed, much like actors can. This is now possible, with a current 
 library of two themes in addition to the original Foundry look.
 
-![Preview](https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/Sanyella-getting-ready-for-launch/custom-journal.png)
+![Preview](https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/master/custom-journal.png)
 
 ## Known Issues
 
