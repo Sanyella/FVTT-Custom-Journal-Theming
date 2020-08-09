@@ -48,7 +48,7 @@ I might also be open to adding your styles, if you so wish. Just reach out to me
 
 ## Thanks, attributions & links
 
-### Contributors & Inspiration
+### Inspiration & Contributors
 
 Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
 and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
