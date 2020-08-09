@@ -61,13 +61,11 @@ awesomness and in such an open way, with code easy to navigate and understand.
 Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
 
 Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
-
-  For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
-
-  And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
   
 ### Textures
 
 Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
     
 Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+
+Of course, wherever it may apply, all rights to other ressources used in this module are still their original owners', and I lay no claim to them whatsoever. 
