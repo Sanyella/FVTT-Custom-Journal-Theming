@@ -6,10 +6,14 @@ class CustomJournalSheet extends JournalSheet {
 		return this.object;
 	}
 
-	_createEditor(target, editorOptions, initialContent) {
-		editorOptions.content_css = "./dark-slate-journal.css";
-		return super._createEditor(target, editorOptions, initialContent);
-	};
+	/*
+	 *	Useful in creating a custom TinyMCE editor, to be looked into for further 
+	 *	tinkering in that direction.
+	 */
+	// _createEditor(target, editorOptions, initialContent) {
+	// 	editorOptions.content_css = "./dark-slate-journal.css";
+	// 	return super._createEditor(target, editorOptions, initialContent);
+	// };
 
 	// Add the sheet configuration button to the journal header
 	_getHeaderButtons() {
@@ -61,6 +65,7 @@ class HandwrittenLetter extends CustomJournalSheet {
 		return options;
 	}
 }
+
 // Creating the structure in CONFIG for Journals to have different sheets
 console.log("CustomJournals | Creating the structure to allow multiple Journal Sheets.")
 CONFIG["JournalEntry"]["sheetClasses"] = {};
@@ -73,19 +78,17 @@ console.log("CustomJournals | Registering the module's sheets.")
  * for your sheet name and you're good to go
  */
 // The default Foundry journal
-EntitySheetConfig.registerSheet(JournalEntry, "customJ", CustomJournalSheet, {
+EntitySheetConfig.registerSheet(JournalEntry, "journals", CustomJournalSheet, {
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: true
 });
 
-EntitySheetConfig.registerSheet(JournalEntry, "customJ", DarkSlateJournal, {
+EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkSlateJournal, {
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: true
 });
 
-EntitySheetConfig.registerSheet(JournalEntry, "customJ", HandwrittenLetter, {
+EntitySheetConfig.registerSheet(JournalEntry, "journals", HandwrittenLetter, {
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: true
 });
-// Eventually if allowing for custom sheets to be loaded as well:
-// console.log("CustomJournals | Registering your personal sheets.")

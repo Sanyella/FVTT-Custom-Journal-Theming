@@ -2,7 +2,7 @@
 	"name": "custom-journal",
 	"title": "Custom Journal",
 	"description": "A custom take on the appearance of journal entries.",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"author": "Sanyella",
 	"scripts": [],
 	"styles": [
