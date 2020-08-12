@@ -19,7 +19,7 @@ class CustomJournalSheet extends JournalSheet {
 	_getHeaderButtons() {
 		let buttons = super._getHeaderButtons();
 
-		// Token Configuration
+		// Journal Configuration
 		const canConfigure = game.user.isGM || this.entity.owner;
 		if (this.options.editable && canConfigure) {
 			buttons = [

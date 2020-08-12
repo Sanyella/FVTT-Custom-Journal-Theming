@@ -99,7 +99,10 @@ body {
     font-size: 2.5em;
 }
 
-.royal-journal .editor-content>h3 {
+.royal-journal .editor-content>h3,
+.royal-journal .editor-content>h4,
+.royal-journal .editor-content>h5,
+.royal-journal .editor-content>h6 {
     color: var(--royal-journal-header-color);
 }
 

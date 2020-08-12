@@ -86,7 +86,10 @@ body {
     color: var(--template-header-color);
 }
 
-.template-journal .editor-content>h3 {
+.template-journal .editor-content>h3,
+.template-journal .editor-content>h4,
+.template-journal .editor-content>h5,
+.template-journal .editor-content>h6 {
     color: var(--template-header-color);
 }
 
