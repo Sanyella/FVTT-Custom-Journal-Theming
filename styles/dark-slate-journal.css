@@ -24,6 +24,7 @@ body {
     --dark-slate-link-color: #3b56b1;
     --dark-slate-link-visited-color: #405494;
 
+    --dark-slate-dark-accent-color: #061a5e;
     --dark-slate-base-accent-color: #002394;
     --dark-slate-light-accent-color: #1b47d6;
     
@@ -124,6 +125,11 @@ body {
 .dark-slate-journal button:hover {
     background-color: var(--dark-slate-button-hover-color);
     box-shadow: 0 0 10px var(--dark-slate-base-accent-color);    
+}
+
+.dark-slate-journal ::-webkit-scrollbar-thumb {
+    background: var(--dark-slate-dark-accent-color);
+    border: 1px solid var(--dark-slate-base-accent-color);
 }
 
 /************************************************

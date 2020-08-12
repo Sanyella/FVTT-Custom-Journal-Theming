@@ -66,6 +66,14 @@ class HandwrittenLetter extends CustomJournalSheet {
 	}
 }
 
+class RoyalJournal extends CustomJournalSheet {
+	static get defaultOptions() {
+		const options = super.defaultOptions;
+		options.classes.push('royal-journal');
+		return options;
+	}
+}
+
 // Creating the structure in CONFIG for Journals to have different sheets
 console.log("CustomJournals | Creating the structure to allow multiple Journal Sheets.")
 CONFIG["JournalEntry"]["sheetClasses"] = {};
@@ -85,10 +93,15 @@ EntitySheetConfig.registerSheet(JournalEntry, "journals", CustomJournalSheet, {
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkSlateJournal, {
 	types: [CONST.BASE_ENTITY_TYPE],
-	makeDefault: true
+	makeDefault: false
 });
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", HandwrittenLetter, {
 	types: [CONST.BASE_ENTITY_TYPE],
-	makeDefault: true
+	makeDefault: false
+});
+
+EntitySheetConfig.registerSheet(JournalEntry, "journals", RoyalJournal, {
+	types: [CONST.BASE_ENTITY_TYPE],
+	makeDefault: false
 });
