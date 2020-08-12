@@ -56,47 +56,60 @@
     ressource that gives you the hexadecimal color code from a color picker is 
     recommended. Be careful too to give them a name unique to your theme so as to 
     not encounter any problems with properties overriding one another (just 
-    search-and-replace the "--template-" pattern)
+    search-and-replace the "--royal-journal-" pattern)
 */
-body {
-    --template-header-color: #bfbfbf;
-    --template-base-text-color: #bfbfbf;
-    --template-link-color: #3b56b1;
-    --template-link-visited-color: #405494;
 
-    --template-dark-accent-color: #061a5e;
-    --template-base-accent-color: #002394;
-    --template-light-accent-color: #1b47d6;
+body {
+
+
+    --royal-journal-dark-accent-color: #b4882a;
+    --royal-journal-base-accent-color: #d2b55c;
+    --royal-journal-light-accent-color: #ddc65b;
+
+    --royal-journal-header-color: var(--royal-journal-base-accent-color);
+    --royal-journal-base-text-color: #bfbfbf;
+    --royal-journal-link-color: var(--royal-journal-base-accent-color);
+    --royal-journal-link-visited-color: #c58b0e;
+
+    --royal-journal-window-text-color: #bfbfbf;
+    --royal-journal-button-background-color: #220410;
+    --royal-journal-button-hover-color: #5f0b2c;
     
-    --template-window-text-color: #bfbfbf;
-    --template-button-background-color: #1a1a1a;
-    --template-button-hover-color: #272727;
-    
-    --template-background-color: #a5afb4bb;
-    --template-background-texture-image: url(../textures/dark-background-1.jpg);
+    --royal-journal-background-color: #b196a6;
+    --royal-journal-background-texture-image: linear-gradient(to top, #220410, #5f0b2c, #220410);
 }
 
 /************************************************
 	Headers and text
 ************************************************/
 
-.template-journal h2,
-.template-journal h1 {
-    border-bottom: 1px solid var(--template-base-accent-color);
-    color: var(--template-header-color);
+.royal-journal h2,
+.royal-journal h1 {
+    border-bottom: 1px solid var(--royal-journal-base-accent-color);
+    color: var(--royal-journal-header-color);
+    font-family: 'anglo_textregular';
+    line-height: 90%;
 }
 
-.template-journal .editor-content>h3 {
-    color: var(--template-header-color);
+.royal-journal h1 {
+    font-size: 3em;
 }
 
-.template-journal .editor-content>p {
-    color: var(--template-base-text-color);
+.royal-journal h2 {
+    font-size: 2.5em;
+}
+
+.royal-journal .editor-content>h3 {
+    color: var(--royal-journal-header-color);
+}
+
+.royal-journal .editor-content>p {
+    color: var(--royal-journal-base-text-color);
 }
 
 /* bullet-point list */
-.template-journal .editor-content>ul {
-  color: var(--template-base-text-color);
+.royal-journal .editor-content>ul {
+  color: var(--royal-journal-base-text-color);
 }
 
 
@@ -105,25 +118,23 @@ body {
     Special text and highlights
 ************************************************/
 
-
-
 /* Links (internet) */
-.template-journal a:link {
-    color: var(--template-link-color);
+.royal-journal a:link {
+    color: var(--royal-journal-link-color);
 }
 
-.template-journal a:visited {
-    color: var(--template-link-visited-color);
+.royal-journal a:visited {
+    color: var(--royal-journal-link-visited-color);
 }
 
-.template-journal a:hover {
-    color: var(--template-link-color);
-    text-shadow: 0px 0px 2px var(--template-light-accent-color);
+.royal-journal a:hover {
+    color: var(--royal-journal-link-color);
+    text-shadow: 0px 0px 2px var(--royal-journal-light-accent-color);
 }
 
 /* Links (entity, rolls) */
-.template-journal a.entity-link, a.inline-roll {
-    background-color: var(--template-button-background-color);
+.royal-journal a.entity-link, a.inline-roll {
+    background-color: var(--royal-journal-button-background-color);
 
 }
 
@@ -132,14 +143,14 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
-.template-journal p::first-letter {
+.royal-journal p::first-letter {
     float: left;
     font-family: 'anglo_textregular';
     font-size: 3em;
     line-height: 0.8em;
     padding-top: 0em;
     padding-bottom: 0em;
-    color: var(--template-header-color);
+    color: var(--royal-journal-header-color);
 }
 
 /************************************************
@@ -147,29 +158,31 @@ body {
 ************************************************/
 
 /* Journal title */
-.template-journal .window-content input[type="text"] {
-    color: var(--template-header-color);
+.royal-journal .window-content input[type="text"] {
+    color: var(--royal-journal-header-color);
+    /*font-family: 'anglo_textregular';
+    font-size: 2.8em;*/
 }
 
 /* Background */
-.template-journal .window-content {
-    background: var(--template-background-texture-image);
+.royal-journal .window-content {
+    background: var(--royal-journal-background-texture-image);
 }
 
-.template-journal button {
-    background-color: var(--template-button-background-color);
-    color: var(--template-window-text-color);
-    border-color: var(--template-button-hover-color);
+.royal-journal button {
+    background-color: var(--royal-journal-button-background-color);
+    color: var(--royal-journal-window-text-color);
+    border-color: var(--royal-journal-button-hover-color);
 }
 
-.template-journal button:hover {
-    background-color: var(--template-button-hover-color);
-    box-shadow: 0 0 10px var(--template-base-accent-color);    
+.royal-journal button:hover {
+    background-color: var(--royal-journal-button-hover-color);
+    box-shadow: 0 0 10px var(--royal-journal-base-accent-color);    
 }
 
-.template-journal ::-webkit-scrollbar-thumb {
-    background: var(--template-dark-accent-color);
-    border: 1px solid var(--template-base-accent-color);
+.royal-journal ::-webkit-scrollbar-thumb {
+    background: var(--royal-journal-dark-accent-color);
+    border: 1px solid var(--royal-journal-base-accent-color);
 }
 
 /************************************************
@@ -180,37 +193,37 @@ body {
 ************************************************/
 
 /* Background */
-.template-journal .editor .tox-edit-area {
-    /* background: var(--template-background-texture-image); */
-    background-color: var(--template-background-color);
+.royal-journal .editor .tox-edit-area {
+    /* background: var(--royal-journal-background-texture-image); */
+    background-color: var(--royal-journal-background-color);
 }
 
 /* Buttons in edit mode */
-.template-journal .editor button {
-    color: var(--template-base-text-color);
-    background-color: var(--template-button-background-color);
+.royal-journal .editor button {
+    color: var(--royal-journal-base-text-color);
+    background-color: var(--royal-journal-button-background-color);
 }
 
-.template-journal .editor button:hover {
-    color: var(--template-base-text-color);
-    background-color: var(--template-button-hover-color);
+.royal-journal .editor button:hover {
+    color: var(--royal-journal-base-text-color);
+    background-color: var(--royal-journal-button-hover-color);
 }
 
 /* Header bar where the buttons are in edit mode */
-.template-journal .editor .tox-toolbar-overlord,
-.template-journal .editor .tox-toolbar__primary {
-    background-color: var(--template-background-color);
+.royal-journal .editor .tox-toolbar-overlord,
+.royal-journal .editor .tox-toolbar__primary {
+    background-color: var(--royal-journal-button-background-color);
 }
 
 /* Button to go into edit mode */
-.template-journal .editor-edit {
-    color: var(--template-base-text-color);
-    background-color: var(--template-button-background-color);
+.royal-journal .editor-edit {
+    color: var(--royal-journal-base-text-color);
+    background-color: var(--royal-journal-button-background-color);
 }
 
 /* Allows for the button images to be in colour */
-.template-journal .tox :not(svg):not(rect) {
-	fill: var(--template-base-text-color);
-	color: var(--template-base-text-color);
+.royal-journal .tox :not(svg):not(rect) {
+	fill: var(--royal-journal-base-text-color);
+	color: var(--royal-journal-base-text-color);
 }
 
