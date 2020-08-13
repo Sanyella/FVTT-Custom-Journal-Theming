@@ -188,6 +188,18 @@ body {
     border: 1px solid var(--royal-journal-base-accent-color);
 }
 
+/* Folder dropdown - upper bar */
+.royal-journal .editable select[name="folder"] {
+    color: var(--royal-journal-header-color);
+    background: var(--royal-journal-background-texture-image);
+}
+
+/* Folder dropdown - the actual dropdown */
+.royal-journal .editable select[name="folder"] option {
+    color: var(--royal-journal-header-color);
+    background-color: var(--royal-journal-button-background-color);
+}
+
 /************************************************
     Editor 
     OPTION - depending on if you want the editing experience to be more or less
