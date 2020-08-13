@@ -175,6 +175,21 @@ body {
     border: 1px solid var(--template-base-accent-color);
 }
 
+/* Folder dropdown - upper bar */
+.template-journal .editable select[name="folder"] {
+    color: var(--template-window-text-color);
+    background: url(../textures/dark-background-1.jpg);
+}
+.template-journal .editable select[name="folder"]:focus {
+    box-shadow: 0 0 5px  var(--template-base-accent-color);
+}
+
+/* Folder dropdown - the actual dropdown */
+.template-journal .editable select[name="folder"] option {
+    color: var(--template-window-text-color);
+    background-color: var(--template-button-hover-color);
+}
+
 /************************************************
     Editor 
     OPTION - depending on if you want the editing experience to be more or less

@@ -148,7 +148,6 @@ body {
 .dark-slate-journal .editable select[name="folder"] option {
     color: var(--dark-slate-window-text-color);
     background-color: var(--dark-slate-button-hover-color);
-    box-shadow: 0 0 10px fuchsia;
 }
 
 /************************************************
