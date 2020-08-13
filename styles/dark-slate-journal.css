@@ -135,6 +135,21 @@ body {
     border: 1px solid var(--dark-slate-base-accent-color);
 }
 
+/* Folder dropdown - upper bar */
+.dark-slate-journal .editable select[name="folder"] {
+    color: var(--dark-slate-window-text-color);
+    background: url(../textures/dark-background-1.jpg);
+}
+.dark-slate-journal .editable select[name="folder"]:focus {
+    box-shadow: 0 0 5px  var(--dark-slate-base-accent-color);
+}
+
+/* Folder dropdown - the actual dropdown */
+.dark-slate-journal .editable select[name="folder"] option {
+    color: var(--dark-slate-window-text-color);
+    background-color: var(--dark-slate-button-hover-color);
+}
+
 /************************************************
     Editor 
     OPTION - depending on if you want the editing experience to be more or less
