@@ -125,7 +125,8 @@ body {
 }
 
 /* Links (entity, rolls) */
-.template-journal a.entity-link, a.inline-roll {
+.template-journal a.entity-link, 
+.template-journal a.inline-roll {
     background-color: var(--template-button-background-color);
 
 }
