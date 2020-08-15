@@ -85,7 +85,8 @@ body {
 }
 
 /* Links (entity, rolls) */
-.dark-slate-journal a.entity-link, a.inline-roll {
+.dark-slate-journal a.entity-link, 
+.dark-slate-journal a.inline-roll {
     background-color: var(--dark-slate-button-background-color);
 
 }

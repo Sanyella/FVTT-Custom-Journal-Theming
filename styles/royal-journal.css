@@ -136,7 +136,8 @@ body {
 }
 
 /* Links (entity, rolls) */
-.royal-journal a.entity-link, a.inline-roll {
+.royal-journal a.entity-link, 
+.royal-journal a.inline-roll {
     background-color: var(--royal-journal-button-background-color);
 
 }
