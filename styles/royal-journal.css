@@ -121,6 +121,10 @@ body {
     Special text and highlights
 ************************************************/
 
+.royal-journal .editor-content>blockquote {
+    color: var(--royal-journal-base-text-color);
+}
+
 /* Links (internet) */
 .royal-journal a:link {
     color: var(--royal-journal-link-color);

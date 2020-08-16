@@ -2,8 +2,16 @@
 // a choice of journals similar to what actor sheets get
 class CustomJournalSheet extends JournalSheet {
 
+
 	get journal(){
 		return this.object;
+	}
+
+	static get defaultOptions() {
+		const options = super.defaultOptions;
+		options.baseApplication = "JournalSheet";
+		options.classes.push('custom-journal');
+		return options;
 	}
 
 	/*
