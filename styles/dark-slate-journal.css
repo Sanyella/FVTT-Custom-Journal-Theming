@@ -68,7 +68,9 @@ body {
     Special text and highlights
 ************************************************/
 
-
+.dark-slate-journal .editor-content>blockquote {
+    color: var(--dark-slate-base-text-color);
+}
 
 /* Links (internet) */
 .dark-slate-journal a:link {

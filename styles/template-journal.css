@@ -108,7 +108,9 @@ body {
     Special text and highlights
 ************************************************/
 
-
+.template-journal .editor-content>blockquote {
+    color: var(--template-base-text-color);
+}
 
 /* Links (internet) */
 .template-journal a:link {
