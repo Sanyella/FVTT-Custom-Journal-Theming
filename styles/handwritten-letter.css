@@ -54,6 +54,15 @@ body {
 }
 
 /************************************************
+    Special text and highlights
+************************************************/
+
+/* Modifies Polyglot CSS */
+.handwritten-letter .polyglot-journal {
+    background-color: #b38e4c60;
+}
+
+/************************************************
     Background and various window elements
 ************************************************/
 
