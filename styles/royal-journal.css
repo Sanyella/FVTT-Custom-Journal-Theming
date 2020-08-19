@@ -146,6 +146,11 @@ body {
 
 }
 
+/* Modifies Polyglot CSS */
+.royal-journal .polyglot-journal {
+    background-color: #b3155460;
+}
+
 /* 
     OPTION Drop cap - you can add font and color options to this block, too!
     Changing sizes and fonts might require you to test and tweak quite a bit
