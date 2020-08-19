@@ -247,3 +247,8 @@ body {
 	color: var(--royal-journal-base-text-color);
 }
 
+/* Modifies Polyglot CSS */
+.royal-journal .polyglot-journal {
+    color: var(--royal-journal-header-color);
+    background-color: #0006;
+}

@@ -195,3 +195,8 @@ body {
 	color: var(--dark-slate-base-text-color);
 }
 
+/* Modifies Polyglot CSS */
+.dark-slate-journal .polyglot-journal {
+    color: var(--dark-slate-journal-header-color);
+    background-color: #0006;
+}
