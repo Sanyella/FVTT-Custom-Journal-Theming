@@ -176,6 +176,9 @@ body {
     /*font-family: 'anglo_textregular';
     font-size: 2.8em;*/
 }
+.royal-journal .window-content input[type="text"]:hover {
+    box-shadow: 0 0 10px var(--royal-journal-base-accent-color);
+}
 
 /* Background */
 .royal-journal .window-content {
@@ -202,6 +205,10 @@ body {
 .royal-journal .editable select[name="folder"] {
     color: var(--royal-journal-header-color);
     background: var(--royal-journal-background-texture-image);
+}
+.royal-journal .editable select[name="folder"]:focus,
+.royal-journal .editable select[name="folder"]:hover {
+    box-shadow: 0 0 5px  var(--royal-journal-base-accent-color);
 }
 
 /* Folder dropdown - the actual dropdown */

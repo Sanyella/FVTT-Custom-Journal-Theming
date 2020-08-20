@@ -121,6 +121,9 @@ body {
 .dark-slate-journal .window-content input[type="text"] {
     color: var(--dark-slate-header-color);
 }
+.dark-slate-journal .window-content input[type="text"]:hover {
+    box-shadow: 0 0 10px var(--dark-slate-base-accent-color);
+}
 
 /* Background */
 .dark-slate-journal .window-content {
@@ -148,7 +151,8 @@ body {
     color: var(--dark-slate-window-text-color);
     background: url(../textures/dark-background-1.jpg);
 }
-.dark-slate-journal .editable select[name="folder"]:focus {
+.dark-slate-journal .editable select[name="folder"]:focus,
+.dark-slate-journal .editable select[name="folder"]:hover {
     box-shadow: 0 0 5px  var(--dark-slate-base-accent-color);
 }
 
