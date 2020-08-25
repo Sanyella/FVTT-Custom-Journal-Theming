@@ -2,10 +2,11 @@
 	"name": "custom-journal",
 	"title": "Custom Journal",
 	"description": "A custom take on the appearance of journal entries.",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"author": "Sanyella",
 	"scripts": [],
 	"styles": [
+		"styles/custom-journal.css",
 		"styles/dark-slate-journal.css",
 		"styles/handwritten-letter.css",
 		"styles/royal-journal.css",
@@ -17,8 +18,8 @@
 	],
 	"packs": [],
 	"url": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming",
-	"manifest": "https://raw.githubusercontent.com/Sanyella/FVTT-Custom-Journal-Theming/master/module.json",
-	"download": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/master/custom-journal.zip",
+	"manifest": "https://raw.githubusercontent.com/Sanyella/FVTT-Custom-Journal-Theming/v1.0.7/module.json",
+	"download": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/v1.0.7/custom-journal.zip",
 	"bugs": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming/issues",
 	"compatibleCoreVersion": "0.6.5",
 	"minimumCoreVersion": "0.6.5"

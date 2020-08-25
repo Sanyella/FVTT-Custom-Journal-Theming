@@ -32,9 +32,21 @@ class CustomJournalSheet extends JournalSheet {
 					wrapper: true
 				},
 				{
+					title: "Simple Block Float",
+					block: 'section',
+					classes: 'simple-block-float',
+					wrapper: true
+				},
+				{
 					title: "Ridged Block",
 					block: 'section',
 					classes: 'ridged-block',
+					wrapper: true
+				},
+				{
+					title: "Ridged Block Float",
+					block: 'section',
+					classes: 'ridged-block-float',
 					wrapper: true
 				}
 			]

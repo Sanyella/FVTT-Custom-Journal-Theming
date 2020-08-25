@@ -59,15 +59,16 @@
     search-and-replace the "--template-" pattern)
 */
 body {
+    --template-dark-accent-color: #061a5e;
+    --template-base-accent-color: #002394;
+    --template-light-accent-color: #1b47d6;
+    --template-translucent-accent-color: #00239440;
+
     --template-header-color: #bfbfbf;
     --template-base-text-color: #bfbfbf;
     --template-link-color: #3b56b1;
     --template-link-visited-color: #405494;
 
-    --template-dark-accent-color: #061a5e;
-    --template-base-accent-color: #002394;
-    --template-light-accent-color: #1b47d6;
-    
     --template-window-text-color: #bfbfbf;
     --template-button-background-color: #1a1a1a;
     --template-button-hover-color: #272727;
@@ -152,6 +153,50 @@ body {
     padding-bottom: 0em;
     color: var(--template-header-color);
 }
+
+/************************************************
+    OPTION Added block styles
+************************************************/
+.template-journal section.simple-block {
+    color: var(--template-base-text-color);
+    background-color: var(--template-translucent-accent-color);
+    border: 1px solid var(--template-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.template-journal section.simple-block-float {
+    color: var(--template-base-text-color);
+    background-color: var(--template-translucent-accent-color);
+    border: 1px solid var(--template-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+.template-journal section.ridged-block {
+    color: var(--template-base-text-color);
+    background-color: var(--template-translucent-accent-color);
+    border: 5px ridge var(--template-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.template-journal section.ridged-block-float {
+    color: var(--template-base-text-color);
+    background-color: var(--template-translucent-accent-color);
+    border: 5px ridge var(--template-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
 
 /************************************************
     Background and various window elements

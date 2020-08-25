@@ -7,6 +7,11 @@ library of three themes in addition to the original Foundry look.
 
 ![Preview](https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/master/custom-journal.png)
 
+In addition to the regular reskin provided by the different themes, you can now also benefit from some other style options in the editor dropdown, such as drop caps (moved from defaulting to *every* paragraphs' first letter) and various text "boxes"! (*not supported by all themes)
+
+![Additional Options](https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/master/custom-journal_more-options.png)
+![Block Demo](https://github.com/Sanyella/FVTT-Custom-Journal-Theming/raw/master/custom-journal_block-demo.png)
+
 ## Known Issues
 
 If you encounter any bug or want to suggest improvements, don't hesitate to tell me either 
@@ -49,9 +54,11 @@ I might also be open to adding your styles, if you so wish. Just reach out to me
 
 ### Inspiration & Contributors
 
-People who have helped me in fixing various things within the module: Magnus, jakvike, elizeuangelo
+People who have helped me in fixing various things within the module: Magnus/elizeuangelo, jakvike.
 
-**Big thanks to all of you!**
+Also shoutout to all those who have and still help me brainstorm and understand things in the Discord.
+
+**Big thanks to all of you! You rock!**
 
 Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
 and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)

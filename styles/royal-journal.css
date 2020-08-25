@@ -60,11 +60,10 @@
 */
 
 body {
-
-
     --royal-journal-dark-accent-color: #b4882a;
     --royal-journal-base-accent-color: #d2b55c;
     --royal-journal-light-accent-color: #ddc65b;
+    --royal-journal-translucent-accent-color: #b4882a60;
 
     --royal-journal-header-color: var(--royal-journal-base-accent-color);
     --royal-journal-base-text-color: #bfbfbf;
@@ -183,20 +182,42 @@ body {
 */
 .royal-journal section.simple-block {
     color: var(--royal-journal-base-text-color);
-    background-color: #b4882a60;
+    background-color: var(--royal-journal-translucent-accent-color);
     border: 1px solid var(--royal-journal-base-accent-color);
     padding: 4px;
     margin-right: 2%;
     margin-left: 2%;
 }
 
+.royal-journal section.simple-block-float {
+    color: var(--royal-journal-base-text-color);
+    background-color: var(--royal-journal-translucent-accent-color);
+    border: 1px solid var(--royal-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
 .royal-journal section.ridged-block {
     color: var(--royal-journal-base-text-color);
-    background-color: #b4882a60;
+    background-color: var(--royal-journal-translucent-accent-color);
     border: 5px ridge var(--royal-journal-base-accent-color);
     padding: 4px;
     margin-right: 2%;
     margin-left: 2%;
+}
+
+.royal-journal section.ridged-block-float {
+    color: var(--royal-journal-base-text-color);
+    background-color: var(--royal-journal-translucent-accent-color);
+    border: 5px ridge var(--royal-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
 }
 
 /************************************************

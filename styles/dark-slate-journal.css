@@ -19,15 +19,16 @@
     Variables for uniform color control
 */
 body {
+    --dark-slate-dark-accent-color: #061a5e;
+    --dark-slate-base-accent-color: #002394;
+    --dark-slate-light-accent-color: #1b47d6;
+    --dark-slate-translucent-accent-color: #00239440;
+
     --dark-slate-header-color: #bfbfbf;
     --dark-slate-base-text-color: #bfbfbf;
     --dark-slate-link-color: #3b56b1;
     --dark-slate-link-visited-color: #405494;
 
-    --dark-slate-dark-accent-color: #061a5e;
-    --dark-slate-base-accent-color: #002394;
-    --dark-slate-light-accent-color: #1b47d6;
-    
     --dark-slate-window-text-color: #bfbfbf;
     --dark-slate-button-background-color: #1a1a1a;
     --dark-slate-button-hover-color: #272727;
@@ -111,6 +112,49 @@ body {
     padding-top: 0em;
     padding-bottom: 0em;
     color: var(--dark-slate-header-color);
+}
+
+/************************************************
+    OPTION Added block styles
+************************************************/
+.dark-slate-journal section.simple-block {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 1px solid var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.dark-slate-journal section.simple-block-float {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 1px solid var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+.dark-slate-journal section.ridged-block {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 5px ridge var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.dark-slate-journal section.ridged-block-float {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 5px ridge var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
 }
 
 /************************************************
