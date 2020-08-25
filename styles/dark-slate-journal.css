@@ -19,15 +19,16 @@
     Variables for uniform color control
 */
 body {
+    --dark-slate-dark-accent-color: #061a5e;
+    --dark-slate-base-accent-color: #002394;
+    --dark-slate-light-accent-color: #1b47d6;
+    --dark-slate-translucent-accent-color: #00239440;
+
     --dark-slate-header-color: #bfbfbf;
     --dark-slate-base-text-color: #bfbfbf;
     --dark-slate-link-color: #3b56b1;
     --dark-slate-link-visited-color: #405494;
 
-    --dark-slate-dark-accent-color: #061a5e;
-    --dark-slate-base-accent-color: #002394;
-    --dark-slate-light-accent-color: #1b47d6;
-    
     --dark-slate-window-text-color: #bfbfbf;
     --dark-slate-button-background-color: #1a1a1a;
     --dark-slate-button-hover-color: #272727;
@@ -103,7 +104,7 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
-.dark-slate-journal p::first-letter {
+.dark-slate-journal span.drop-cap {
     float: left;
     font-family: 'anglo_textregular';
     font-size: 3em;
@@ -114,12 +115,58 @@ body {
 }
 
 /************************************************
+    OPTION Added block styles
+************************************************/
+.dark-slate-journal section.simple-block {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 1px solid var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.dark-slate-journal section.simple-block-float {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 1px solid var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+.dark-slate-journal section.ridged-block {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 5px ridge var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.dark-slate-journal section.ridged-block-float {
+    color: var(--dark-slate-base-text-color);
+    background-color: var(--dark-slate-translucent-accent-color);
+    border: 5px ridge var(--dark-slate-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+/************************************************
     Background and various window elements
 ************************************************/
 
 /* Journal title */
 .dark-slate-journal .window-content input[type="text"] {
     color: var(--dark-slate-header-color);
+}
+.dark-slate-journal .window-content input[type="text"]:hover {
+    box-shadow: 0 0 10px var(--dark-slate-base-accent-color);
 }
 
 /* Background */
@@ -148,7 +195,8 @@ body {
     color: var(--dark-slate-window-text-color);
     background: url(../textures/dark-background-1.jpg);
 }
-.dark-slate-journal .editable select[name="folder"]:focus {
+.dark-slate-journal .editable select[name="folder"]:focus,
+.dark-slate-journal .editable select[name="folder"]:hover {
     box-shadow: 0 0 5px  var(--dark-slate-base-accent-color);
 }
 

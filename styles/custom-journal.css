@@ -1,0 +1,62 @@
+/*
+    Variables for uniform color control
+*/
+body {
+	--custom-journal-translucent-accent-color: #D2520B40;
+	--custom-journal-base-accent-color: #D2520B;
+}
+
+/* 
+    OPTION Drop cap - you can add font and color options to this block, too!
+    Changing sizes and fonts might require you to test and tweak quite a bit
+    to get exactly the effect you want, but hey, drop caps are cool! 
+*/
+.custom-journal span.drop-cap {
+    float: left;
+    font-family: 'anglo_textregular';
+    font-size: 3em;
+    line-height: 0.8em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+
+/************************************************
+    OPTION Added block styles
+************************************************/
+
+.custom-journal section.simple-block {
+    background-color: var(--custom-journal-translucent-accent-color);
+    border: 1px solid var(--custom-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.custom-journal section.simple-block-float {
+    background-color: var(--custom-journal-translucent-accent-color);
+    border: 1px solid var(--custom-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+.custom-journal section.ridged-block {
+    background-color: var(--custom-journal-translucent-accent-color);
+    border: 5px ridge var(--custom-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.custom-journal section.ridged-block-float {
+    background-color: var(--custom-journal-translucent-accent-color);
+    border: 5px ridge var(--custom-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
