@@ -24,9 +24,6 @@ to fix something.
 - **Bug**: The drop down for the "default" journal sheet doesn't currently work. I have yet to 
 find out why, so please be patient. Rest assured, individual sheet themes *are* working.
 
-- **Compatibility issues**: Compatibility with One Journal is not planned for the near future, so sorry about that. 
-Maybe after I manage to take this module to a more generally polished version. 
-
 *Theme-specific issues aren't going to be listed here, but will be available and appropriately 
 tagged in the GitHub issues.*
 
