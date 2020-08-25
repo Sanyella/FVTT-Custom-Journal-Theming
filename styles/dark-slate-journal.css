@@ -94,6 +94,12 @@ body {
 
 }
 
+/* Secret section */
+.dark-slate-journal section.secret {
+    color: var(--dark-slate-base-text-color);
+    background-color: #df94ee20;
+}
+
 /* Modifies Polyglot CSS */
 .dark-slate-journal .polyglot-journal {
     background-color: #00239440;
@@ -206,11 +212,25 @@ body {
     background-color: var(--dark-slate-button-hover-color);
 }
 
+/*
+    One Journal compatibility
+*/
+
+/* Background with OneJournal */
+#OneJournalShell .dark-slate-journal.one-journal-attached .window-content {
+    background: var(--dark-slate-background-texture-image);
+}
+/* Entry title underline with OneJournal */
+.dark-slate-journal.one-journal-attached form input[name="name"] {
+  border-color: var(--dark-slate-base-accent-color);
+}
+
+
 /************************************************
     Editor 
     OPTION - depending on if you want the editing experience to be more or less
     the same as the modified presentation, or a more streamlined editing look, it
-    is her that you should look to enable, disable, or tweak things.
+    is here that you should look to enable, disable, or tweak things.
 ************************************************/
 
 /* Background */
