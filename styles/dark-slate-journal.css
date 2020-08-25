@@ -103,7 +103,7 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
-.dark-slate-journal p::first-letter {
+.dark-slate-journal span.drop-cap {
     float: left;
     font-family: 'anglo_textregular';
     font-size: 3em;

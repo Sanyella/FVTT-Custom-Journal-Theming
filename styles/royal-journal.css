@@ -99,6 +99,14 @@ body {
     font-size: 2.5em;
 }
 
+.royal-journal h3 {
+    font-size: 1.5em;
+}
+
+.royal-journal h4 {
+    font-size: 1.25em;
+}
+
 .royal-journal .editor-content>h3,
 .royal-journal .editor-content>h4,
 .royal-journal .editor-content>h5,
@@ -146,6 +154,11 @@ body {
 
 }
 
+.royal-journal section.secret {
+    color: var(--royal-journal-base-text-color);
+    background-color: #df94ee20;
+}
+
 /* Modifies Polyglot CSS */
 .royal-journal .polyglot-journal {
     background-color: #b3155460;
@@ -156,7 +169,7 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
-.royal-journal p::first-letter {
+.royal-journal span.drop-cap {
     float: left;
     font-family: 'anglo_textregular';
     font-size: 3em;
@@ -164,6 +177,26 @@ body {
     padding-top: 0em;
     padding-bottom: 0em;
     color: var(--royal-journal-header-color);
+}
+/*
+    OPTION Added block styles
+*/
+.royal-journal section.simple-block {
+    color: var(--royal-journal-base-text-color);
+    background-color: #b4882a60;
+    border: 1px solid var(--royal-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.royal-journal section.ridged-block {
+    color: var(--royal-journal-base-text-color);
+    background-color: #b4882a60;
+    border: 5px ridge var(--royal-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 /************************************************

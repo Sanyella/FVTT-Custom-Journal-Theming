@@ -14,6 +14,35 @@ class CustomJournalSheet extends JournalSheet {
 		return options;
 	}
 
+	//Include the option for the Drop Cap style in the editor styles' menu
+	_createEditor(target, editorOptions, initialContent) {
+		console.log("Custom Journal | Test editor creation");
+		editorOptions.style_formats.push({
+			title: "Custom Journal",
+			items: [
+				{
+					title: "Drop Cap",
+					inline: 'span',
+					classes: 'drop-cap' 
+				},
+				{
+					title: "Simple Block",
+					block: 'section',
+					classes: 'simple-block',
+					wrapper: true
+				},
+				{
+					title: "Ridged Block",
+					block: 'section',
+					classes: 'ridged-block',
+					wrapper: true
+				}
+			]
+		});
+		editorOptions.style_formats_merge = true;
+		super._createEditor(target,editorOptions, initialContent);
+	}
+
 	/*
 	 *	Useful in creating a custom TinyMCE editor, to be looked into for further 
 	 *	tinkering in that direction.
