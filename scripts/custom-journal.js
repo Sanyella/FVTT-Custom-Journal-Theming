@@ -16,7 +16,7 @@ class CustomJournalSheet extends JournalSheet {
 
 	//Include the option for the Drop Cap style in the editor styles' menu
 	_createEditor(target, editorOptions, initialContent) {
-		console.log("Custom Journal | Test editor creation");
+		if (!editorOptions.style_formats) editorOptions.style_formats = {};
 		editorOptions.style_formats.push({
 			title: "Custom Journal",
 			items: [
