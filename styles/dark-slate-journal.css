@@ -171,6 +171,7 @@ body {
 .dark-slate-journal .window-content input[type="text"] {
     color: var(--dark-slate-header-color);
 }
+.dark-slate-journal .window-content input[type="text"]:focus,
 .dark-slate-journal .window-content input[type="text"]:hover {
     box-shadow: 0 0 10px var(--dark-slate-base-accent-color);
 }

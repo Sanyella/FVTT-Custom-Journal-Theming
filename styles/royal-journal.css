@@ -231,6 +231,7 @@ body {
     /*font-family: 'anglo_textregular';
     font-size: 2.8em;*/
 }
+.royal-journal .window-content input[type="text"]:focus,
 .royal-journal .window-content input[type="text"]:hover {
     box-shadow: 0 0 10px var(--royal-journal-base-accent-color);
 }

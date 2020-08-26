@@ -212,6 +212,10 @@ body {
 .template-journal .window-content input[type="text"] {
     color: var(--template-header-color);
 }
+.template-journal .window-content input[type="text"]:focus,
+.template-journal .window-content input[type="text"]:hover {
+    box-shadow: 0 0 10px var(--template-base-accent-color);
+}
 
 /* Background */
 .template-journal .window-content {

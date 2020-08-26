@@ -71,3 +71,15 @@ body {
     background: var(--handwritten-background-texture-image);
 }
 
+/*
+    One Journal compatibility
+*/
+
+/* Background with OneJournal */
+#OneJournalShell .handwritten-letter.one-journal-attached .window-content {
+    background: var(--handwritten-background-texture-image);
+}
+/* Entry title underline with OneJournal */
+/* .handwritten-letter.one-journal-attached form input[name="name"] {
+  border-width: 0;
+} */
