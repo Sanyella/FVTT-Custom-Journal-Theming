@@ -24,6 +24,8 @@ to fix something.
 - **Bug**: The drop down for the "default" journal sheet doesn't currently work. I have yet to 
 find out why, so please be patient. Rest assured, individual sheet themes *are* working.
 
+- **Compatibility issue**: The button for MINDMAP doesn't show when using Custom Journal.
+
 *Theme-specific issues aren't going to be listed here, but will be available and appropriately 
 tagged in the GitHub issues.*
 
