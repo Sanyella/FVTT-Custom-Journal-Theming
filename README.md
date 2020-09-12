@@ -1,5 +1,7 @@
 # FVTT Custom Journal Theming - The Journals of your Dreams!
 
+> **IF YOU ARE STILL ON 1.0.11 OR LOWER, YOU WILL MOST LIKELY HAVE TO REINSTALL MANUALLY, SINCE I MADE A MISTAKE IN THE MANIFEST LINK, BREAKING THE USUAL UPDATE PROCESS. SORRY ABOUT THE INCONVENIENCE!**
+
 Welcome to your own personal playground to design your own wonderful-looking journals! 
 Not only did I want to make journals more interesting, I also wanted to to allow them
 to be selectively themed, much like actors can. This is now possible, with a current 
@@ -24,7 +26,8 @@ to fix something.
 - **Bug**: The drop down for the "default" journal sheet doesn't currently work. I have yet to 
 find out why, so please be patient. Rest assured, individual sheet themes *are* working.
 
-- **Compatibility issue**: The button for MINDMAP doesn't show when using Custom Journal.
+- **Compatibility issue**: The button for MINDMAP doesn't show when using Custom Journal. There
+is also a know issue with Data Toolbox.
 
 *Theme-specific issues aren't going to be listed here, but will be available and appropriately 
 tagged in the GitHub issues.*
