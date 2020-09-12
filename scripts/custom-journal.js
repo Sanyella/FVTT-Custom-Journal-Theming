@@ -16,42 +16,58 @@ class CustomJournalSheet extends JournalSheet {
 
 	//Include the option for the Drop Cap style in the editor styles' menu
 	_createEditor(target, editorOptions, initialContent) {
-		if (!editorOptions.style_formats) editorOptions.style_formats = [];
-		editorOptions.style_formats.push({
-			title: "Custom Journal",
-			items: [
+		if (!editorOptions.style_formats) 
+		{
+			editorOptions.style_formats = [
 				{
-					title: "Drop Cap",
-					inline: 'span',
-					classes: 'drop-cap' 
-				},
-				{
-					title: "Simple Block",
-					block: 'section',
-					classes: 'simple-block',
-					wrapper: true
-				},
-				{
-					title: "Simple Block Float",
-					block: 'section',
-					classes: 'simple-block-float',
-					wrapper: true
-				},
-				{
-					title: "Ridged Block",
-					block: 'section',
-					classes: 'ridged-block',
-					wrapper: true
-				},
-				{
-					title: "Ridged Block Float",
-					block: 'section',
-					classes: 'ridged-block-float',
-					wrapper: true
+					title: "Custom",
+					items: [
+						{
+							title: "Secret",
+							block: 'section',
+							classes: 'secret',
+							wrapper: true
+						}
+					]
 				}
-			]
-		});
-		editorOptions.style_formats_merge = true;
+			];
+		}
+		editorOptions.style_formats.push(
+			{
+				title: "Custom Journal",
+				items: [
+					{
+						title: "Drop Cap",
+						inline: 'span',
+						classes: 'drop-cap' 
+					},
+					{
+						title: "Simple Block",
+						block: 'section',
+						classes: 'simple-block',
+						wrapper: true
+					},
+					{
+						title: "Simple Block Float",
+						block: 'section',
+						classes: 'simple-block-float',
+						wrapper: true
+					},
+					{
+						title: "Ridged Block",
+						block: 'section',
+						classes: 'ridged-block',
+						wrapper: true
+					},
+					{
+						title: "Ridged Block Float",
+						block: 'section',
+						classes: 'ridged-block-float',
+						wrapper: true
+					}
+				]
+			}
+		);
 		super._createEditor(target,editorOptions, initialContent);
 	}
 
