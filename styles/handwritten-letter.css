@@ -69,6 +69,8 @@ body {
 /* Background */
 .handwritten-letter .window-content {
     background: var(--handwritten-background-texture-image);
+    background-size: cover;
+
 }
 
 /*
