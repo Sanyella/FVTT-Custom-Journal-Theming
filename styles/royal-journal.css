@@ -161,7 +161,7 @@ body {
 
 /* Modifies Polyglot CSS */
 .royal-journal .polyglot-journal {
-    background-color: #b3155460;
+    background-color: var(--royal-journal-translucent-accent-color);
 }
 
 /* 

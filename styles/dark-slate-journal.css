@@ -102,7 +102,7 @@ body {
 
 /* Modifies Polyglot CSS */
 .dark-slate-journal .polyglot-journal {
-    background-color: #00239440;
+    background-color: var(--dark-slate-translucent-accent-color);
 }
 
 /* 
@@ -200,7 +200,7 @@ body {
 /* Folder dropdown - upper bar */
 .dark-slate-journal .editable select[name="folder"] {
     color: var(--dark-slate-window-text-color);
-    background: url(../textures/dark-background-1.jpg);
+    background: var(--dark-slate-background-texture-image);
 }
 .dark-slate-journal .editable select[name="folder"]:focus,
 .dark-slate-journal .editable select[name="folder"]:hover {

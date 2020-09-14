@@ -1,0 +1,271 @@
+/*
+
+    Thanks, attributions & links
+    *************************************
+    Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+    and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+    which have both helped me tremendously in understanding how to structure my own
+    module.
+    Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
+    Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+        For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+        And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+
+*/
+
+/*
+    Variables for uniform color control
+*/
+body {
+    --dark-mode-journal-dark-accent-color: #061a5e;
+    --dark-mode-journal-base-accent-color: #3F88E6;
+    --dark-mode-journal-light-accent-color: #5a9cf1;
+    --dark-mode-journal-translucent-accent-color: #00239440;
+
+    --dark-mode-journal-header-color: #bfbfbf;
+    --dark-mode-journal-base-text-color: #bfbfbf;
+    --dark-mode-journal-link-color: #3F88E6;
+    --dark-mode-journal-link-visited-color: #5a9cf1;
+
+    --dark-mode-journal-window-text-color: #bfbfbf;
+    --dark-mode-journal-button-background-color: #1a1a1a;
+    --dark-mode-journal-button-hover-color: #272727;
+    
+    --dark-mode-journal-background-color: #a5afb4bb;
+    --dark-mode-journal-background-texture-image: #131313;
+}
+
+/************************************************
+	Headers and text
+************************************************/
+
+.dark-mode-journal h2,
+.dark-mode-journal h1 {
+    border-bottom: 1px solid var(--dark-mode-journal-base-accent-color);
+    color: var(--dark-mode-journal-header-color);
+}
+
+.dark-mode-journal .editor-content>h3,
+.dark-mode-journal .editor-content>h4,
+.dark-mode-journal .editor-content>h5,
+.dark-mode-journal .editor-content>h6 {
+    color: var(--dark-mode-journal-header-color);
+}
+
+.dark-mode-journal .editor-content>p {
+    color: var(--dark-mode-journal-base-text-color);
+}
+
+/* bullet-point list */
+.dark-mode-journal .editor-content>ul {
+  color: var(--dark-mode-journal-base-text-color);
+}
+
+
+
+/************************************************
+    Special text and highlights
+************************************************/
+
+.dark-mode-journal .editor-content>blockquote {
+    color: var(--dark-mode-journal-base-text-color);
+}
+
+/* Links (internet) */
+.dark-mode-journal a:link {
+    color: var(--dark-mode-journal-link-color);
+}
+
+.dark-mode-journal a:visited {
+    color: var(--dark-mode-journal-link-visited-color);
+}
+
+.dark-mode-journal a:hover {
+    color: var(--dark-mode-journal-link-color);
+    text-shadow: 0px 0px 2px var(--dark-mode-journal-light-accent-color);
+}
+
+/* Links (entity, rolls) */
+.dark-mode-journal a.entity-link, 
+.dark-mode-journal a.inline-roll {
+    background-color: var(--dark-mode-journal-button-background-color);
+
+}
+
+/* Secret section */
+.dark-mode-journal section.secret {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: #df94ee20;
+}
+
+/* Modifies Polyglot CSS */
+.dark-mode-journal .polyglot-journal {
+    background-color: var(--dark-mode-journal-translucent-accent-color);
+}
+
+/* 
+    OPTION Drop cap - you can add font and color options to this block, too!
+    Changing sizes and fonts might require you to test and tweak quite a bit
+    to get exactly the effect you want, but hey, drop caps are cool! 
+*/
+.dark-mode-journal span.drop-cap {
+    float: left;
+    font-family: 'anglo_textregular';
+    font-size: 3em;
+    line-height: 0.8em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    color: var(--dark-mode-journal-header-color);
+}
+
+/************************************************
+    OPTION Added block styles
+************************************************/
+.dark-mode-journal section.simple-block {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-translucent-accent-color);
+    border: 1px solid var(--dark-mode-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.dark-mode-journal section.simple-block-float {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-translucent-accent-color);
+    border: 1px solid var(--dark-mode-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+.dark-mode-journal section.ridged-block {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-translucent-accent-color);
+    border: 5px ridge var(--dark-mode-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.dark-mode-journal section.ridged-block-float {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-translucent-accent-color);
+    border: 5px ridge var(--dark-mode-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+/************************************************
+    Background and various window elements
+************************************************/
+
+/* Journal title */
+.dark-mode-journal .window-content input[type="text"] {
+    color: var(--dark-mode-journal-header-color);
+}
+.dark-mode-journal .window-content input[type="text"]:focus,
+.dark-mode-journal .window-content input[type="text"]:hover {
+    box-shadow: 0 0 10px var(--dark-mode-journal-base-accent-color);
+}
+
+/* Background */
+.dark-mode-journal .window-content {
+    background: var(--dark-mode-journal-background-texture-image);
+}
+
+.dark-mode-journal button {
+    background-color: var(--dark-mode-journal-button-background-color);
+    color: var(--dark-mode-journal-window-text-color);
+    border-color: var(--dark-mode-journal-button-hover-color);
+}
+
+.dark-mode-journal button:hover {
+    background-color: var(--dark-mode-journal-button-hover-color);
+    box-shadow: 0 0 10px var(--dark-mode-journal-base-accent-color);    
+}
+
+.dark-mode-journal ::-webkit-scrollbar-thumb {
+    background: var(--dark-mode-journal-dark-accent-color);
+    border: 1px solid var(--dark-mode-journal-base-accent-color);
+}
+
+/* Folder dropdown - upper bar */
+.dark-mode-journal .editable select[name="folder"] {
+    color: var(--dark-mode-journal-window-text-color);
+    background: var(--dark-mode-journal-background-texture-image);
+}
+.dark-mode-journal .editable select[name="folder"]:focus,
+.dark-mode-journal .editable select[name="folder"]:hover {
+    box-shadow: 0 0 5px  var(--dark-mode-journal-base-accent-color);
+}
+
+/* Folder dropdown - the actual dropdown */
+.dark-mode-journal .editable select[name="folder"] option {
+    color: var(--dark-mode-journal-window-text-color);
+    background-color: var(--dark-mode-journal-button-hover-color);
+}
+
+/*
+    One Journal compatibility
+*/
+
+/* Background with OneJournal */
+#OneJournalShell .dark-mode-journal.one-journal-attached .window-content {
+    background: var(--dark-mode-journal-background-texture-image);
+}
+/* Entry title underline with OneJournal */
+.dark-mode-journal.one-journal-attached form input[name="name"] {
+  border-color: var(--dark-mode-journal-base-accent-color);
+}
+
+
+/************************************************
+    Editor 
+    OPTION - depending on if you want the editing experience to be more or less
+    the same as the modified presentation, or a more streamlined editing look, it
+    is here that you should look to enable, disable, or tweak things.
+************************************************/
+
+/* Background */
+.dark-mode-journal .editor .tox-edit-area {
+    /* background: var(--dark-mode-journal-background-texture-image); */
+    background-color: var(--dark-mode-journal-background-color);
+}
+
+/* Buttons in edit mode */
+.dark-mode-journal .editor button {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-button-background-color);
+}
+
+.dark-mode-journal .editor button:hover {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-button-hover-color);
+}
+
+/* Header bar where the buttons are in edit mode */
+.dark-mode-journal .editor .tox-toolbar-overlord,
+.dark-mode-journal .editor .tox-toolbar__primary {
+    background-color: var(--dark-mode-journal-background-color);
+}
+
+/* Button to go into edit mode */
+.dark-mode-journal .editor-edit {
+    color: var(--dark-mode-journal-base-text-color);
+    background-color: var(--dark-mode-journal-button-background-color);
+}
+
+/* Allows for the button images to be in colour */
+.dark-mode-journal .tox :not(svg):not(rect) {
+	fill: var(--dark-mode-journal-base-text-color);
+	color: var(--dark-mode-journal-base-text-color);
+}
+

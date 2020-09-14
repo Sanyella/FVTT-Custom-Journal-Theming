@@ -115,6 +115,14 @@ class CustomJournalSheet extends JournalSheet {
  * quotes (here, dark-slate-journal) with whatever name you gave your theme in the .css
  * file
  */
+class DarkModeJournal extends CustomJournalSheet {
+	static get defaultOptions() {
+		const options = super.defaultOptions;
+		options.classes.push('dark-mode-journal');
+		return options;
+	}
+}
+
 class DarkSlateJournal extends CustomJournalSheet {
 	static get defaultOptions() {
 		const options = super.defaultOptions;
@@ -154,6 +162,11 @@ console.log("CustomJournals | Registering the module's sheets.")
 EntitySheetConfig.registerSheet(JournalEntry, "journals", CustomJournalSheet, {
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: true
+});
+
+EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkModeJournal, {
+	types: [CONST.BASE_ENTITY_TYPE],
+	makeDefault: false
 });
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkSlateJournal, {
