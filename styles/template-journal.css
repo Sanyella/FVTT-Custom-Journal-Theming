@@ -103,7 +103,15 @@ body {
   color: var(--template-base-text-color);
 }
 
+/* tables in general */
+.template-journal tbody {
+    color: var(--template-journal-base-text-color);
+}
 
+/* table header cells */
+.template-journal th {
+    color: var(--template-journal-header-color);
+}
 
 /************************************************
     Special text and highlights

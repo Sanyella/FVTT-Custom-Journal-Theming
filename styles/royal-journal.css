@@ -122,6 +122,15 @@ body {
   color: var(--royal-journal-base-text-color);
 }
 
+/* tables in general */
+.royal-journal tbody {
+    color: var(--royal-journal-base-text-color);
+}
+
+/* table header cells */
+.royal-journal th {
+    color: var(--royal-journal-header-color);
+}
 
 
 /************************************************

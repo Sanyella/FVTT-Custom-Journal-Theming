@@ -63,7 +63,15 @@ body {
   color: var(--dark-mode-journal-base-text-color);
 }
 
+/* tables in general */
+.dark-mode-journal tbody {
+    color: var(--dark-mode-journal-base-text-color);
+}
 
+/* table header cells */
+.dark-mode-journal th {
+    color: var(--dark-mode-journal-header-color);
+}
 
 /************************************************
     Special text and highlights
