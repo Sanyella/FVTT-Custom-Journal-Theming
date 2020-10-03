@@ -15,9 +15,10 @@ class CustomJournalSheet extends JournalSheet {
 	}
 
 	//Include the option for the Drop Cap style in the editor styles' menu
+	//For compatibility with 6.6, to be removed when 7.x hits stable, 
+	//replaced with activateEditor
 	_createEditor(target, editorOptions, initialContent) {
-		if (!editorOptions.style_formats) 
-		{
+		if (!editorOptions.style_formats) {
 			editorOptions.style_formats = [
 				{
 					title: "Custom",
@@ -33,6 +34,63 @@ class CustomJournalSheet extends JournalSheet {
 			];
 		}
 		editorOptions.style_formats.push(
+			{
+				title: "Custom Journal",
+				items: [
+					{
+						title: "Drop Cap",
+						inline: 'span',
+						classes: 'drop-cap'
+					},
+					{
+						title: "Simple Block",
+						block: 'section',
+						classes: 'simple-block',
+						wrapper: true
+					},
+					{
+						title: "Simple Block Float",
+						block: 'section',
+						classes: 'simple-block-float',
+						wrapper: true
+					},
+					{
+						title: "Ridged Block",
+						block: 'section',
+						classes: 'ridged-block',
+						wrapper: true
+					},
+					{
+						title: "Ridged Block Float",
+						block: 'section',
+						classes: 'ridged-block-float',
+						wrapper: true
+					}
+				]
+			}
+		);
+		super._createEditor(target, editorOptions, initialContent);
+	}
+
+	//Include the option for the Drop Cap style in the editor styles' menu
+	activateEditor(name, options={}, ...args) {
+		if (!options.style_formats) 
+		{
+			options.style_formats = [
+				{
+					title: "Custom",
+					items: [
+						{
+							title: "Secret",
+							block: 'section',
+							classes: 'secret',
+							wrapper: true
+						}
+					]
+				}
+			];
+		}
+		options.style_formats.push(
 			{
 				title: "Custom Journal",
 				items: [
@@ -68,7 +126,7 @@ class CustomJournalSheet extends JournalSheet {
 				]
 			}
 		);
-		super._createEditor(target,editorOptions, initialContent);
+		super.activateEditor(name, options, ...args);
 	}
 
 	/*
