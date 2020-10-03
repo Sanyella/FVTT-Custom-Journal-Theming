@@ -58,21 +58,19 @@
     not encounter any problems with properties overriding one another (just 
     search-and-replace the "--template-" pattern)
 */
+
 body {
     --template-dark-accent-color: #061a5e;
     --template-base-accent-color: #002394;
     --template-light-accent-color: #1b47d6;
     --template-translucent-accent-color: #00239440;
-
     --template-header-color: #bfbfbf;
     --template-base-text-color: #bfbfbf;
     --template-link-color: #3b56b1;
     --template-link-visited-color: #405494;
-
     --template-window-text-color: #bfbfbf;
     --template-button-background-color: #1a1a1a;
     --template-button-hover-color: #272727;
-    
     --template-background-color: #a5afb4bb;
     --template-background-texture-image: url(../textures/dark-background-1.jpg);
 }
@@ -81,16 +79,12 @@ body {
 	Headers and text
 ************************************************/
 
-.template-journal h2,
-.template-journal h1 {
+.template-journal h2, .template-journal h1 {
     border-bottom: 1px solid var(--template-base-accent-color);
     color: var(--template-header-color);
 }
 
-.template-journal .editor-content>h3,
-.template-journal .editor-content>h4,
-.template-journal .editor-content>h5,
-.template-journal .editor-content>h6 {
+.template-journal .editor-content>h3, .template-journal .editor-content>h4, .template-journal .editor-content>h5, .template-journal .editor-content>h6 {
     color: var(--template-header-color);
 }
 
@@ -99,18 +93,33 @@ body {
 }
 
 /* bullet-point list */
+
 .template-journal .editor-content>ul {
-  color: var(--template-base-text-color);
+    color: var(--template-base-text-color);
 }
 
 /* tables in general */
+
 .template-journal tbody {
     color: var(--template-journal-base-text-color);
 }
 
 /* table header cells */
+
 .template-journal th {
     color: var(--template-journal-header-color);
+}
+
+/* MEME minimal compatibility */
+
+.template-journal .CodeMirror {
+    color: var(--template-journal-base-text-color);
+}
+
+/* The cursor indicating where you are writing */
+
+.template-journal .CodeMirror-cursor {
+    border-left: 1px solid var(--template-journal-base-text-color);
 }
 
 /************************************************
@@ -122,6 +131,7 @@ body {
 }
 
 /* Links (internet) */
+
 .template-journal a:link {
     color: var(--template-link-color);
 }
@@ -136,19 +146,20 @@ body {
 }
 
 /* Links (entity, rolls) */
-.template-journal a.entity-link, 
-.template-journal a.inline-roll {
-    background-color: var(--template-button-background-color);
 
+.template-journal a.entity-link, .template-journal a.inline-roll {
+    background-color: var(--template-button-background-color);
 }
 
 /* Secret section */
+
 .template-journal section.secret {
     color: var(--template-base-text-color);
     background-color: #df94ee20;
 }
 
 /* Modifies Polyglot CSS */
+
 .template-journal .polyglot-journal {
     background-color: #00239440;
 }
@@ -158,6 +169,7 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
+
 .template-journal span.drop-cap {
     float: left;
     font-family: 'anglo_textregular';
@@ -171,6 +183,7 @@ body {
 /************************************************
     OPTION Added block styles
 ************************************************/
+
 .template-journal section.simple-block {
     color: var(--template-base-text-color);
     background-color: var(--template-translucent-accent-color);
@@ -211,21 +224,22 @@ body {
     float: right;
 }
 
-
 /************************************************
     Background and various window elements
 ************************************************/
 
 /* Journal title */
+
 .template-journal .window-content input[type="text"] {
     color: var(--template-header-color);
 }
-.template-journal .window-content input[type="text"]:focus,
-.template-journal .window-content input[type="text"]:hover {
+
+.template-journal .window-content input[type="text"]:focus, .template-journal .window-content input[type="text"]:hover {
     box-shadow: 0 0 10px var(--template-base-accent-color);
 }
 
 /* Background */
+
 .template-journal .window-content {
     background: var(--template-background-texture-image);
 }
@@ -238,7 +252,7 @@ body {
 
 .template-journal button:hover {
     background-color: var(--template-button-hover-color);
-    box-shadow: 0 0 10px var(--template-base-accent-color);    
+    box-shadow: 0 0 10px var(--template-base-accent-color);
 }
 
 .template-journal ::-webkit-scrollbar-thumb {
@@ -247,15 +261,18 @@ body {
 }
 
 /* Folder dropdown - upper bar */
+
 .template-journal .editable select[name="folder"] {
     color: var(--template-window-text-color);
     background: url(../textures/dark-background-1.jpg);
 }
+
 .template-journal .editable select[name="folder"]:focus {
-    box-shadow: 0 0 5px  var(--template-base-accent-color);
+    box-shadow: 0 0 5px var(--template-base-accent-color);
 }
 
 /* Folder dropdown - the actual dropdown */
+
 .template-journal .editable select[name="folder"] option {
     color: var(--template-window-text-color);
     background-color: var(--template-button-hover-color);
@@ -266,14 +283,16 @@ body {
 */
 
 /* Background with OneJournal */
+
 #OneJournalShell .template-journal.one-journal-attached .window-content {
     background: var(--template-background-texture-image);
 }
-/* Entry title underline with OneJournal */
-.template-journal.one-journal-attached form input[name="name"] {
-  border-color: var(--template-base-accent-color);
-}
 
+/* Entry title underline with OneJournal */
+
+.template-journal.one-journal-attached form input[name="name"] {
+    border-color: var(--template-base-accent-color);
+}
 
 /************************************************
     Editor 
@@ -283,12 +302,14 @@ body {
 ************************************************/
 
 /* Background */
+
 .template-journal .editor .tox-edit-area {
     /* background: var(--template-background-texture-image); */
     background-color: var(--template-background-color);
 }
 
 /* Buttons in edit mode */
+
 .template-journal .editor button {
     color: var(--template-base-text-color);
     background-color: var(--template-button-background-color);
@@ -300,20 +321,21 @@ body {
 }
 
 /* Header bar where the buttons are in edit mode */
-.template-journal .editor .tox-toolbar-overlord,
-.template-journal .editor .tox-toolbar__primary {
+
+.template-journal .editor .tox-toolbar-overlord, .template-journal .editor .tox-toolbar__primary {
     background-color: var(--template-background-color);
 }
 
 /* Button to go into edit mode */
+
 .template-journal .editor-edit {
     color: var(--template-base-text-color);
     background-color: var(--template-button-background-color);
 }
 
 /* Allows for the button images to be in colour */
-.template-journal .tox :not(svg):not(rect) {
-	fill: var(--template-base-text-color);
-	color: var(--template-base-text-color);
-}
 
+.template-journal .tox :not(svg):not(rect) {
+    fill: var(--template-base-text-color);
+    color: var(--template-base-text-color);
+}

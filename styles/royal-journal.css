@@ -64,16 +64,13 @@ body {
     --royal-journal-base-accent-color: #d2b55c;
     --royal-journal-light-accent-color: #ddc65b;
     --royal-journal-translucent-accent-color: #b4882a60;
-
     --royal-journal-header-color: var(--royal-journal-base-accent-color);
     --royal-journal-base-text-color: #bfbfbf;
     --royal-journal-link-color: var(--royal-journal-base-accent-color);
     --royal-journal-link-visited-color: #c58b0e;
-
     --royal-journal-window-text-color: #bfbfbf;
     --royal-journal-button-background-color: #220410;
     --royal-journal-button-hover-color: #5f0b2c;
-    
     --royal-journal-background-color: #b196a6;
     --royal-journal-background-texture-image: linear-gradient(to top, #220410, #5f0b2c, #220410);
 }
@@ -82,8 +79,7 @@ body {
 	Headers and text
 ************************************************/
 
-.royal-journal h2,
-.royal-journal h1 {
+.royal-journal h2, .royal-journal h1 {
     border-bottom: 1px solid var(--royal-journal-base-accent-color);
     color: var(--royal-journal-header-color);
     font-family: 'anglo_textregular';
@@ -106,10 +102,7 @@ body {
     font-size: 1.25em;
 }
 
-.royal-journal .editor-content>h3,
-.royal-journal .editor-content>h4,
-.royal-journal .editor-content>h5,
-.royal-journal .editor-content>h6 {
+.royal-journal .editor-content>h3, .royal-journal .editor-content>h4, .royal-journal .editor-content>h5, .royal-journal .editor-content>h6 {
     color: var(--royal-journal-header-color);
 }
 
@@ -118,20 +111,34 @@ body {
 }
 
 /* bullet-point list */
+
 .royal-journal .editor-content>ul {
-  color: var(--royal-journal-base-text-color);
+    color: var(--royal-journal-base-text-color);
 }
 
 /* tables in general */
+
 .royal-journal tbody {
     color: var(--royal-journal-base-text-color);
 }
 
 /* table header cells */
+
 .royal-journal th {
     color: var(--royal-journal-header-color);
 }
 
+/* MEME minimal compatibility */
+
+.royal-journal .CodeMirror {
+    color: var(--royal-journal-base-text-color);
+}
+
+/* The cursor indicating where you are writing */
+
+.royal-journal .CodeMirror-cursor {
+    border-left: 1px solid var(--royal-journal-base-text-color);
+}
 
 /************************************************
     Special text and highlights
@@ -142,6 +149,7 @@ body {
 }
 
 /* Links (internet) */
+
 .royal-journal a:link {
     color: var(--royal-journal-link-color);
 }
@@ -156,19 +164,20 @@ body {
 }
 
 /* Links (entity, rolls) */
-.royal-journal a.entity-link, 
-.royal-journal a.inline-roll {
-    background-color: var(--royal-journal-button-background-color);
 
+.royal-journal a.entity-link, .royal-journal a.inline-roll {
+    background-color: var(--royal-journal-button-background-color);
 }
 
 /* Secret section */
+
 .royal-journal section.secret {
     color: var(--royal-journal-base-text-color);
     background-color: #df94ee20;
 }
 
 /* Modifies Polyglot CSS */
+
 .royal-journal .polyglot-journal {
     background-color: var(--royal-journal-translucent-accent-color);
 }
@@ -178,6 +187,7 @@ body {
     Changing sizes and fonts might require you to test and tweak quite a bit
     to get exactly the effect you want, but hey, drop caps are cool! 
 */
+
 .royal-journal span.drop-cap {
     float: left;
     font-family: 'anglo_textregular';
@@ -187,9 +197,11 @@ body {
     padding-bottom: 0em;
     color: var(--royal-journal-header-color);
 }
+
 /*
     OPTION Added block styles
 */
+
 .royal-journal section.simple-block {
     color: var(--royal-journal-base-text-color);
     background-color: var(--royal-journal-translucent-accent-color);
@@ -235,17 +247,19 @@ body {
 ************************************************/
 
 /* Journal title */
+
 .royal-journal .window-content input[type="text"] {
     color: var(--royal-journal-header-color);
     /*font-family: 'anglo_textregular';
     font-size: 2.8em;*/
 }
-.royal-journal .window-content input[type="text"]:focus,
-.royal-journal .window-content input[type="text"]:hover {
+
+.royal-journal .window-content input[type="text"]:focus, .royal-journal .window-content input[type="text"]:hover {
     box-shadow: 0 0 10px var(--royal-journal-base-accent-color);
 }
 
 /* Background */
+
 .royal-journal .window-content {
     background: var(--royal-journal-background-texture-image);
 }
@@ -258,7 +272,7 @@ body {
 
 .royal-journal button:hover {
     background-color: var(--royal-journal-button-hover-color);
-    box-shadow: 0 0 10px var(--royal-journal-base-accent-color);    
+    box-shadow: 0 0 10px var(--royal-journal-base-accent-color);
 }
 
 .royal-journal ::-webkit-scrollbar-thumb {
@@ -267,16 +281,18 @@ body {
 }
 
 /* Folder dropdown - upper bar */
+
 .royal-journal .editable select[name="folder"] {
     color: var(--royal-journal-header-color);
     background: var(--royal-journal-background-texture-image);
 }
-.royal-journal .editable select[name="folder"]:focus,
-.royal-journal .editable select[name="folder"]:hover {
-    box-shadow: 0 0 5px  var(--royal-journal-base-accent-color);
+
+.royal-journal .editable select[name="folder"]:focus, .royal-journal .editable select[name="folder"]:hover {
+    box-shadow: 0 0 5px var(--royal-journal-base-accent-color);
 }
 
 /* Folder dropdown - the actual dropdown */
+
 .royal-journal .editable select[name="folder"] option {
     color: var(--royal-journal-header-color);
     background-color: var(--royal-journal-button-background-color);
@@ -287,14 +303,16 @@ body {
 */
 
 /* Background with OneJournal */
+
 #OneJournalShell .royal-journal.one-journal-attached .window-content {
     background: var(--royal-journal-background-texture-image);
 }
-/* Entry title underline with OneJournal */
-.royal-journal.one-journal-attached form input[name="name"] {
-  border-color: var(--royal-journal-base-accent-color);
-}
 
+/* Entry title underline with OneJournal */
+
+.royal-journal.one-journal-attached form input[name="name"] {
+    border-color: var(--royal-journal-base-accent-color);
+}
 
 /************************************************
     Editor 
@@ -304,12 +322,14 @@ body {
 ************************************************/
 
 /* Background */
+
 .royal-journal .editor .tox-edit-area {
     /* background: var(--royal-journal-background-texture-image); */
     background-color: var(--royal-journal-background-color);
 }
 
 /* Buttons in edit mode */
+
 .royal-journal .editor button {
     color: var(--royal-journal-base-text-color);
     background-color: var(--royal-journal-button-background-color);
@@ -321,20 +341,21 @@ body {
 }
 
 /* Header bar where the buttons are in edit mode */
-.royal-journal .editor .tox-toolbar-overlord,
-.royal-journal .editor .tox-toolbar__primary {
+
+.royal-journal .editor .tox-toolbar-overlord, .royal-journal .editor .tox-toolbar__primary {
     background-color: var(--royal-journal-button-background-color);
 }
 
 /* Button to go into edit mode */
+
 .royal-journal .editor-edit {
     color: var(--royal-journal-base-text-color);
     background-color: var(--royal-journal-button-background-color);
 }
 
 /* Allows for the button images to be in colour */
-.royal-journal .tox :not(svg):not(rect) {
-	fill: var(--royal-journal-base-text-color);
-	color: var(--royal-journal-base-text-color);
-}
 
+.royal-journal .tox :not(svg):not(rect) {
+    fill: var(--royal-journal-base-text-color);
+    color: var(--royal-journal-base-text-color);
+}

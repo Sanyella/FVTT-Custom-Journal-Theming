@@ -13,9 +13,9 @@
     Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
 
 */
+
 body {
     --handwritten-background-texture-image: url(../textures/parchment-1.jpg);
-
     --handwritten-base-font: 'lovers_quarrelregular'
 }
 
@@ -23,14 +23,7 @@ body {
 	Headers and text
 ************************************************/
 
-.handwritten-letter h1,
-.handwritten-letter h2,
-.handwritten-letter .editor-content>h3,
-.handwritten-letter .editor-content>h4,
-.handwritten-letter .editor-content>h5,
-.handwritten-letter .editor-content>h6,
-.handwritten-letter .editor-content>p,
-.handwritten-letter .editor-content>ul {
+.handwritten-letter h1, .handwritten-letter h2, .handwritten-letter .editor-content>h3, .handwritten-letter .editor-content>h4, .handwritten-letter .editor-content>h5, .handwritten-letter .editor-content>h6, .handwritten-letter .editor-content>p, .handwritten-letter .editor-content>ul {
     border-bottom: 0px;
     font-family: var(--handwritten-base-font);
     line-height: 85%;
@@ -48,8 +41,15 @@ body {
     font-size: 2.4em;
 }
 
-.handwritten-letter .editor-content>p,
-.handwritten-letter .editor-content>ul {
+.handwritten-letter .editor-content>p, .handwritten-letter .editor-content>ul {
+    font-size: 2.2em;
+}
+
+/* MEME minimal compatibility */
+
+.handwritten-letter .CodeMirror p, 
+.handwritten-letter .CodeMirror ul {
+    font-family: var(--handwritten-base-font);
     font-size: 2.2em;
 }
 
@@ -58,6 +58,7 @@ body {
 ************************************************/
 
 /* Modifies Polyglot CSS */
+
 .handwritten-letter .polyglot-journal {
     background-color: #b38e4c60;
 }
@@ -67,10 +68,10 @@ body {
 ************************************************/
 
 /* Background */
+
 .handwritten-letter .window-content {
     background: var(--handwritten-background-texture-image);
     background-size: cover;
-
 }
 
 /*
@@ -78,10 +79,13 @@ body {
 */
 
 /* Background with OneJournal */
+
 #OneJournalShell .handwritten-letter.one-journal-attached .window-content {
     background: var(--handwritten-background-texture-image);
 }
+
 /* Entry title underline with OneJournal */
+
 /* .handwritten-letter.one-journal-attached form input[name="name"] {
   border-width: 0;
 } */

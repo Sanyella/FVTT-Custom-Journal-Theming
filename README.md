@@ -26,7 +26,7 @@ to fix something.
 - **Bug**: The drop down for the "default" journal sheet doesn't currently work. I have yet to 
 find out why, so please be patient. Rest assured, individual sheet themes *are* working.
 
-- **Compatibility issue**: The button for MINDMAP doesn't show when using Custom Journal. MEME is problematic in the way of formatting provided by Custom Journal. There is also a know issue with Data Toolbox.
+- **Compatibility issue**: The button for MINDMAP doesn't show when using Custom Journal. While MEME can now be used with minimal level of compatibility (as in, you can actually read the text and have the general look of themes), it doesn't have buttons for the custom styles provided by Custom Journal. There is also a know issue with Data Toolbox.
 
 *Theme-specific issues aren't going to be listed here, but will be available and appropriately 
 tagged in the GitHub issues.*
