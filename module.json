@@ -11,11 +11,24 @@
 		"styles/dark-slate-journal.css",
 		"styles/handwritten-letter.css",
 		"styles/royal-journal.css",
+		"styles/sci-fi-journal.css",
 		"fonts/Anglo-text/stylesheet.css",
 		"fonts/Lovers-Quarrel/stylesheet.css"
 	],
 	"esmodules": [
 		"scripts/custom-journal.js"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		},
+		{
+			"lang": "fr",
+			"name": "Français",
+			"path": "lang/fr.json"
+		}
 	],
 	"packs": [],
 	"url": "https://github.com/Sanyella/FVTT-Custom-Journal-Theming",

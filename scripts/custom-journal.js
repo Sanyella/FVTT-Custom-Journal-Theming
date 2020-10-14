@@ -35,33 +35,33 @@ class CustomJournalSheet extends JournalSheet {
 		}
 		editorOptions.style_formats.push(
 			{
-				title: "Custom Journal",
+				title: game.i18n.localize("custom-journal.StyleSection"),
 				items: [
 					{
-						title: "Drop Cap",
+						title: game.i18n.localize("custom-journal.DropCap"),
 						inline: 'span',
 						classes: 'drop-cap'
 					},
 					{
-						title: "Simple Block",
+						title: game.i18n.localize("custom-journal.SimpleBlock"),
 						block: 'section',
 						classes: 'simple-block',
 						wrapper: true
 					},
 					{
-						title: "Simple Block Float",
+						title: game.i18n.localize("custom-journal.SimpleBlockFloat"),
 						block: 'section',
 						classes: 'simple-block-float',
 						wrapper: true
 					},
 					{
-						title: "Ridged Block",
+						title: game.i18n.localize("custom-journal.RidgedBlock"),
 						block: 'section',
 						classes: 'ridged-block',
 						wrapper: true
 					},
 					{
-						title: "Ridged Block Float",
+						title: game.i18n.localize("custom-journal.RidgedBlockFloat"),
 						block: 'section',
 						classes: 'ridged-block-float',
 						wrapper: true
@@ -92,33 +92,33 @@ class CustomJournalSheet extends JournalSheet {
 		}
 		options.style_formats.push(
 			{
-				title: "Custom Journal",
+				title: game.i18n.localize("custom-journal.StyleSection"),
 				items: [
 					{
-						title: "Drop Cap",
+						title: game.i18n.localize("custom-journal.DropCap"),
 						inline: 'span',
 						classes: 'drop-cap' 
 					},
 					{
-						title: "Simple Block",
+						title: game.i18n.localize("custom-journal.SimpleBlock"),
 						block: 'section',
 						classes: 'simple-block',
 						wrapper: true
 					},
 					{
-						title: "Simple Block Float",
+						title: game.i18n.localize("custom-journal.SimpleBlockFloat"),
 						block: 'section',
 						classes: 'simple-block-float',
 						wrapper: true
 					},
 					{
-						title: "Ridged Block",
+						title: game.i18n.localize("custom-journal.RidgedBlock"),
 						block: 'section',
 						classes: 'ridged-block',
 						wrapper: true
 					},
 					{
-						title: "Ridged Block Float",
+						title: game.i18n.localize("custom-journal.RidgedBlockFloat"),
 						block: 'section',
 						classes: 'ridged-block-float',
 						wrapper: true
@@ -205,6 +205,14 @@ class RoyalJournal extends CustomJournalSheet {
 	}
 }
 
+class SciFiJournal extends CustomJournalSheet {
+	static get defaultOptions() {
+		const options = super.defaultOptions;
+		options.classes.push('sci-fi-journal');
+		return options;
+	}
+}
+
 // Creating the structure in CONFIG for Journals to have different sheets
 console.log("CustomJournals | Creating the structure to allow multiple Journal Sheets.")
 CONFIG["JournalEntry"]["sheetClasses"] = {};
@@ -218,26 +226,37 @@ console.log("CustomJournals | Registering the module's sheets.")
  */
 // The default Foundry journal
 EntitySheetConfig.registerSheet(JournalEntry, "journals", CustomJournalSheet, {
+	// label: game.i18n.localize("custom-Journal.CustomJournalSheet"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: true
 });
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkModeJournal, {
+	// label: game.i18n.localize("custom-Journal.DarkMode"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: false
 });
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkSlateJournal, {
+	// label: game.i18n.localize("custom-Journal.DarkSlate"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: false
 });
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", HandwrittenLetter, {
+	// label: game.i18n.localize("custom-Journal.HandwrittenLetter"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: false
 });
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", RoyalJournal, {
+	// label: game.i18n.localize("custom-Journal.Royal"),
+	types: [CONST.BASE_ENTITY_TYPE],
+	makeDefault: false
+});
+
+EntitySheetConfig.registerSheet(JournalEntry, "journals", SciFiJournal, {
+	// label: game.i18n.localize("custom-Journal.SciFi"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: false
 });
