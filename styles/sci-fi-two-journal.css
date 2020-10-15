@@ -1,0 +1,310 @@
+/*
+
+    Thanks, attributions & links
+    *************************************
+    Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+    and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+    which have both helped me tremendously in understanding how to structure my own
+	module.
+	Play font: https://fonts.google.com/specimen/Play
+	Montserrat font: https://fonts.google.com/specimen/Montserrat
+    Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
+    Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+        For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+        And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+
+*/
+
+/*
+    Variables for uniform color control
+*/
+
+body {
+    --sci-fi-two-journal-dark-accent-color: #103950;
+    --sci-fi-two-journal-base-accent-color: #0f485f;
+    --sci-fi-two-journal-light-accent-color: #196997;
+    --sci-fi-two-journal-translucent-accent-color: #19659740;
+    --sci-fi-two-journal-header-color: #76d8e6;
+    --sci-fi-two-journal-base-text-color: #bfbfbf;
+    --sci-fi-two-journal-link-color: #76d8e6;
+    --sci-fi-two-journal-link-visited-color: #438994;
+    --sci-fi-two-journal-window-text-color: #bfbfbf;
+    --sci-fi-two-journal-button-background-color: #02090f;
+    --sci-fi-two-journal-button-hover-color: #061925;
+    --sci-fi-two-journal-background-color: #a5afb4bb;
+    --sci-fi-two-journal-background-texture-image: radial-gradient(#040f1b, #01070a);
+}
+
+/************************************************
+	Headers and text
+************************************************/
+
+.sci-fi-two-journal h2, .sci-fi-two-journal h1 {
+    border-bottom: 1px solid var(--sci-fi-two-journal-base-accent-color);
+    color: var(--sci-fi-two-journal-header-color);
+    font-family: 'Play-Regular';
+}
+
+.sci-fi-two-journal .editor-content>h3, .sci-fi-two-journal .editor-content>h4, .sci-fi-two-journal .editor-content>h5, .sci-fi-two-journal .editor-content>h6 {
+    color: var(--sci-fi-two-journal-header-color);
+    font-family: 'Play-Regular';
+}
+
+.sci-fi-two-journal .editor-content>p {
+    color: var(--sci-fi-two-journal-base-text-color);
+    font-family: 'Montserrat-Regular';
+}
+
+/* bullet-point list */
+
+.sci-fi-two-journal .editor-content>ul {
+    color: var(--sci-fi-two-journal-base-text-color);
+}
+
+/* tables in general */
+
+.sci-fi-two-journal tbody {
+    color: var(--sci-fi-two-journal-base-text-color);
+}
+
+/* table header cells */
+
+.sci-fi-two-journal th {
+    color: var(--sci-fi-two-journal-header-color);
+}
+
+/* MEME minimal compatibility */
+
+.sci-fi-two-journal .CodeMirror {
+    color: var(--sci-fi-two-journal-base-text-color);
+}
+
+/* The cursor indicating where you are writing */
+
+.sci-fi-two-journal .CodeMirror-cursor {
+    border-left: 1px solid var(--sci-fi-two-journal-base-text-color);
+}
+
+/************************************************
+    Special text and highlights
+************************************************/
+
+.sci-fi-two-journal .editor-content>blockquote {
+    color: var(--sci-fi-two-journal-base-text-color);
+}
+
+.sci-fi-two-journal ::selection {
+    background: var(--sci-fi-two-journal-light-accent-color);
+}
+
+/* Links (internet) */
+
+.sci-fi-two-journal a:link {
+    color: var(--sci-fi-two-journal-link-color);
+}
+
+.sci-fi-two-journal a:visited {
+    color: var(--sci-fi-two-journal-link-visited-color);
+}
+
+.sci-fi-two-journal a:hover {
+    color: var(--sci-fi-two-journal-link-color);
+    text-shadow: 0px 0px 2px var(--sci-fi-two-journal-light-accent-color);
+}
+
+/* Links (entity, rolls) */
+
+.sci-fi-two-journal a.entity-link, .sci-fi-two-journal a.inline-roll {
+    background-color: var(--sci-fi-two-journal-button-background-color);
+}
+
+/* Secret section */
+
+.sci-fi-two-journal section.secret {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: #df94ee20;
+}
+
+/* Modifies Polyglot CSS */
+
+.sci-fi-two-journal .polyglot-journal {
+    background-color: #0c5c5663;
+}
+
+/************************************************
+    OPTION Drop cap - you can add font and color options to this block, too!
+    Changing sizes and fonts might require you to test and tweak quite a bit
+    to get exactly the effect you want, but hey, drop caps are cool! 
+************************************************/
+
+.sci-fi-two-journal span.drop-cap {
+    float: left;
+    font-family: 'anglo_textregular';
+    font-size: 3em;
+    line-height: 0.8em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    color: var(--sci-fi-two-journal-header-color);
+}
+
+/************************************************
+    OPTION Added block styles
+************************************************/
+
+.sci-fi-two-journal section.simple-block {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-translucent-accent-color);
+    border: 1px solid var(--sci-fi-two-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.sci-fi-two-journal section.simple-block-float {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-translucent-accent-color);
+    border: 1px solid var(--sci-fi-two-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+.sci-fi-two-journal section.ridged-block {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-translucent-accent-color);
+    border: 5px ridge var(--sci-fi-two-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.sci-fi-two-journal section.ridged-block-float {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-translucent-accent-color);
+    border: 5px ridge var(--sci-fi-two-journal-base-accent-color);
+    padding: 4px;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 35%;
+    float: right;
+}
+
+/************************************************
+    Background and various window elements
+************************************************/
+
+/* Journal title */
+
+.sci-fi-two-journal .window-content input[type="text"] {
+    color: var(--sci-fi-two-journal-header-color);
+}
+
+.sci-fi-two-journal .window-content input[type="text"]:focus, .sci-fi-two-journal .window-content input[type="text"]:hover {
+    box-shadow: 0 0 10px var(--sci-fi-two-journal-base-accent-color);
+}
+
+/* Background */
+
+.sci-fi-two-journal .window-content {
+    background: var(--sci-fi-two-journal-background-texture-image);
+}
+
+.sci-fi-two-journal button {
+    background-color: var(--sci-fi-two-journal-button-background-color);
+    color: var(--sci-fi-two-journal-window-text-color);
+    border-color: var(--sci-fi-two-journal-button-hover-color);
+}
+
+.sci-fi-two-journal button:hover {
+    background-color: var(--sci-fi-two-journal-button-hover-color);
+    box-shadow: 0 0 10px var(--sci-fi-two-journal-base-accent-color);
+}
+
+.sci-fi-two-journal ::-webkit-scrollbar-thumb {
+    background: var(--sci-fi-two-journal-dark-accent-color);
+    border: 1px solid var(--sci-fi-two-journal-base-accent-color);
+}
+
+/* Folder dropdown - upper bar */
+
+.sci-fi-two-journal .editable select[name="folder"] {
+    color: var(--sci-fi-two-journal-window-text-color);
+    background: var(--sci-fi-two-journal-background-texture-image);
+}
+
+.sci-fi-two-journal .editable select[name="folder"]:focus, .sci-fi-two-journal .editable select[name="folder"]:hover {
+    box-shadow: 0 0 5px var(--sci-fi-two-journal-base-accent-color);
+}
+
+/* Folder dropdown - the actual dropdown */
+
+.sci-fi-two-journal .editable select[name="folder"] option {
+    color: var(--sci-fi-two-journal-window-text-color);
+    background-color: var(--sci-fi-two-journal-button-hover-color);
+}
+
+/*
+    One Journal compatibility
+*/
+
+/* Background with OneJournal */
+
+#OneJournalShell .sci-fi-two-journal.one-journal-attached .window-content {
+    background: var(--sci-fi-two-journal-background-texture-image);
+}
+
+/* Entry title underline with OneJournal */
+
+.sci-fi-two-journal.one-journal-attached form input[name="name"] {
+    border-color: var(--sci-fi-two-journal-base-accent-color);
+}
+
+/************************************************
+    Editor 
+    OPTION - depending on if you want the editing experience to be more or less
+    the same as the modified presentation, or a more streamlined editing look, it
+    is here that you should look to enable, disable, or tweak things.
+************************************************/
+
+/* Background */
+
+.sci-fi-two-journal .editor .tox-edit-area {
+    /* background: var(--sci-fi-two-journal-background-texture-image); */
+    background-color: var(--sci-fi-two-journal-background-color);
+}
+
+/* Buttons in edit mode */
+
+.sci-fi-two-journal .editor button {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-button-background-color);
+}
+
+.sci-fi-two-journal .editor button:hover {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-button-hover-color);
+}
+
+/* Header bar where the buttons are in edit mode */
+
+.sci-fi-two-journal .editor .tox-toolbar-overlord, .sci-fi-two-journal .editor .tox-toolbar__primary {
+    background-color: var(--sci-fi-two-journal-background-color);
+}
+
+/* Button to go into edit mode */
+
+.sci-fi-two-journal .editor-edit {
+    color: var(--sci-fi-two-journal-base-text-color);
+    background-color: var(--sci-fi-two-journal-button-background-color);
+}
+
+/* Allows for the button images to be in colour */
+
+.sci-fi-two-journal .tox :not(svg):not(rect) {
+    fill: var(--sci-fi-two-journal-base-text-color);
+    color: var(--sci-fi-two-journal-base-text-color);
+}

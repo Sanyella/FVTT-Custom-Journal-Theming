@@ -205,10 +205,18 @@ class RoyalJournal extends CustomJournalSheet {
 	}
 }
 
-class SciFiJournal extends CustomJournalSheet {
+class SciFiOneJournal extends CustomJournalSheet {
 	static get defaultOptions() {
 		const options = super.defaultOptions;
-		options.classes.push('sci-fi-journal');
+		options.classes.push('sci-fi-one-journal');
+		return options;
+	}
+}
+
+class SciFiTwoJournal extends CustomJournalSheet {
+	static get defaultOptions() {
+		const options = super.defaultOptions;
+		options.classes.push('sci-fi-two-journal');
 		return options;
 	}
 }
@@ -255,8 +263,14 @@ EntitySheetConfig.registerSheet(JournalEntry, "journals", RoyalJournal, {
 	makeDefault: false
 });
 
-EntitySheetConfig.registerSheet(JournalEntry, "journals", SciFiJournal, {
-	// label: game.i18n.localize("custom-Journal.SciFi"),
+EntitySheetConfig.registerSheet(JournalEntry, "journals", SciFiOneJournal, {
+	// label: game.i18n.localize("custom-Journal.SciFiOne"),
+	types: [CONST.BASE_ENTITY_TYPE],
+	makeDefault: false
+});
+
+EntitySheetConfig.registerSheet(JournalEntry, "journals", SciFiTwoJournal, {
+	// label: game.i18n.localize("custom-Journal.SciFiTwo"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: false
 });

@@ -4,8 +4,9 @@
 	"custom-journal.DarkSlate": "Dark Slate",
 	"custom-journal.Royal": "Royal",
 	"custom-journal.HandwrittenLetter": "Handwritten Letter",
-	"custom-journal.SciFi": "Sci-Fi",
-
+	"custom-journal.SciFiOne": "Sci-Fi One",
+	"custom-journal.SciFiTwo": "Sci-Fi Two",
+	
 	"custom-journal.StyleSection": "Custom Journal",
 	"custom-journal.DropCap": "Drop Cap",
 	"custom-journal.SimpleBlock": "Simple Block",

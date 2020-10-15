@@ -1,3 +1,9 @@
+# 1.2.0
+
+- Added support for localization. English and French are already included, though I do not usually play in French, so I'll happily welcome any suggestions that would make the naming more consistent with what's already there, as well as any other languages!
+
+- Time for a little love for all of you who have been finding the general fantasy existing look a bit jarring in your sci-fi game with two brand new sci-fi themes! Again, let me know if there's anything not quite right or you'd like tweaked! I'm not all that familiar with what's "standard" in sci-fi. I'd also love to had fancy sci-fi borders to the quote blocks, but I don't have a border texture that I can use laying around, so unless I can get my hands on one of those, it will unfortunately have to remain a wishlist item.
+
 # 1.1.3
 
 - **Applied styling for minimal compatibility with MEME.** As I am not using this module myself, there may be some untested areas, so if you see anything amiss that specifically seems to be caused by the interaction between Custom Journal and MEME, please add a comment under https://github.com/Sanyella/FVTT-Custom-Journal-Theming/issues/31. Also note that this is for *minimal* compatibility, and that means the styles offered by Custom Journal aren't supported by the MEME editor, since there are no style dropdown. 

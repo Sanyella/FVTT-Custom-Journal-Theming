@@ -148,6 +148,10 @@ body {
     color: var(--royal-journal-base-text-color);
 }
 
+.royal-journal ::selection {
+    background: var(--royal-journal-base-accent-color);
+}
+
 /* Links (internet) */
 
 .royal-journal a:link {
