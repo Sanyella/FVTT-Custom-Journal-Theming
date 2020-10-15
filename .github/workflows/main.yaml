@@ -13,7 +13,7 @@ jobs:
 
       - name: Zip Files
         working-directory: ./
-        run: zip -r ./custom-journal.zip module.json fonts/ scripts/ styles/ textures/ 
+        run: zip -r ./custom-journal.zip module.json fonts/ scripts/ styles/ textures/ lang/
 
       - name: Get Version
         shell: bash

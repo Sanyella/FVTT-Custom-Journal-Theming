@@ -90,6 +90,10 @@ body {
     color: var(--dark-slate-journal-base-text-color);
 }
 
+.dark-slate-journal ::selection {
+    background: var(--dark-slate-journal-light-accent-color);
+}
+
 /* Links (internet) */
 
 .dark-slate-journal a:link {

@@ -87,7 +87,11 @@ body {
 ************************************************/
 
 .dark-mode-journal .editor-content>blockquote {
-    color: var(--dark-mode-journal-base-text-color);
+    color: var(--dark-mode-journal-dark-text-color);
+}
+
+.dark-mode-journal ::selection {
+    background: var(--dark-mode-journal-base-accent-color);
 }
 
 /* Links (internet) */
