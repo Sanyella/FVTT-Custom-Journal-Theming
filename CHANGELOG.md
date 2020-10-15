@@ -1,3 +1,11 @@
+# 1.2.1
+
+- Added Spanish translation, thanks to José E. Lozano!
+
+- Added the stylesheets for the Sci-Fi fonts to the `module.json` file. (Oops!)
+
+- Removed superfluous html demo of the fonts from the module files.
+
 # 1.2.0
 
 - Added support for localization. English and French are already included, though I do not usually play in French, so I'll happily welcome any suggestions that would make the naming more consistent with what's already there, as well as any other languages!

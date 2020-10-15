@@ -57,6 +57,8 @@ I might also be open to adding your styles, if you so wish. Just reach out to me
 
 People who have helped me in fixing various things within the module: Magnus/elizeuangelo, jakvike.
 
+People who have contributed translations: José E. Lozano.
+
 Also shoutout to all those who have and still help me brainstorm and understand things in the Discord.
 
 **Big thanks to all of you! You rock!**
