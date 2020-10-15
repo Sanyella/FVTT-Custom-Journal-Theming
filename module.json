@@ -29,6 +29,11 @@
 			"lang": "fr",
 			"name": "Français",
 			"path": "lang/fr.json"
+		},
+		{
+			"lang": "es",
+			"name": "Spanish",
+			"path": "lang/es.json"
 		}
 	],
 	"packs": [],

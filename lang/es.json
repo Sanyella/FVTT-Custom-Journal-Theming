@@ -1,0 +1,16 @@
+{
+	"custom-journal.CustomJournalSheet": "Tema Original",
+	"custom-journal.DarkMode": "Modo Oscuro",
+	"custom-journal.DarkSlate": "Modo Pizarra",
+	"custom-journal.Royal": "Regio",
+	"custom-journal.HandwrittenLetter": "Escritura a Mano",
+	"custom-journal.SciFiOne": "Ci-Fi Uno",
+	"custom-journal.SciFiTwo": "Ci-Fi Dos",
+	
+	"custom-journal.StyleSection": "Custom Journal",
+	"custom-journal.DropCap": "Letra Capital",
+	"custom-journal.SimpleBlock": "Bloque Simple",
+	"custom-journal.SimpleBlockFloat": "Bloque Simple Flotante",
+	"custom-journal.RidgedBlock": "Bloque Marco",
+	"custom-journal.RidgedBlockFloat": "Bloque Marco Flotante"
+}
