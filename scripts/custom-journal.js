@@ -197,6 +197,14 @@ class HandwrittenLetter extends CustomJournalSheet {
 	}
 }
 
+class HandwrittenLetterAlt extends CustomJournalSheet {
+	static get defaultOptions() {
+		const options = super.defaultOptions;
+		options.classes.push('handwritten-letter-alt');
+		return options;
+	}
+}
+
 class RoyalJournal extends CustomJournalSheet {
 	static get defaultOptions() {
 		const options = super.defaultOptions;
@@ -253,6 +261,12 @@ EntitySheetConfig.registerSheet(JournalEntry, "journals", DarkSlateJournal, {
 
 EntitySheetConfig.registerSheet(JournalEntry, "journals", HandwrittenLetter, {
 	// label: game.i18n.localize("custom-Journal.HandwrittenLetter"),
+	types: [CONST.BASE_ENTITY_TYPE],
+	makeDefault: false
+});
+
+EntitySheetConfig.registerSheet(JournalEntry, "journals", HandwrittenLetterAlt, {
+	// label: game.i18n.localize("custom-Journal.HandwrittenLetterAlt"),
 	types: [CONST.BASE_ENTITY_TYPE],
 	makeDefault: false
 });

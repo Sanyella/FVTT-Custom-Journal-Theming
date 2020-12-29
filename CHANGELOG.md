@@ -1,3 +1,9 @@
+# 1.3.0
+
+Finally found some time to be working on this again, bringing some fresh additions to Custom Journal, including:
+
+- A second Handwritten style with a cleaner (easier to read) font, *Learning Curve* by Jess Latham, recommended DrDoomPL for Polish characters support.
+
 # 1.2.1
 
 - Added Spanish translation, thanks to José E. Lozano!

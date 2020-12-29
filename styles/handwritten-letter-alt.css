@@ -1,0 +1,90 @@
+/*
+    Thanks, attributions & links
+    *************************************
+    Thanks to both Stryxin's dark mode module (https://github.com/Stryxin/dnd5edark-foundryvtt)
+    and Felix's BetterNPCSheet module (https://github.com/syl3r86/BetterNPCSheet5e)
+    which have both helped me tremendously in understanding how to structure my own
+    module.
+    Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
+    Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+        For more drop-cap fonts: https://www.1001fonts.com/drop-caps-fonts.html
+        And how to add them: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+    Dark background 1: https://www.publicdomainpictures.net/en/view-image.php?image=169017&picture=grunge-background
+    Parchment 1, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+
+*/
+
+body {
+    --handwritten-alt-background-texture-image: url(../textures/parchment-1.jpg);
+    --handwritten-alt-base-font: 'LearningCurve'
+}
+
+/************************************************
+	Headers and text
+************************************************/
+
+.handwritten-letter-alt h1, .handwritten-letter-alt h2, .handwritten-letter-alt .editor-content>h3, .handwritten-letter-alt .editor-content>h4, .handwritten-letter-alt .editor-content>h5, .handwritten-letter-alt .editor-content>h6, .handwritten-letter-alt .editor-content>p, .handwritten-letter-alt .editor-content>ul {
+    border-bottom: 0px;
+    font-family: var(--handwritten-alt-base-font);
+    line-height: 85%;
+}
+
+.handwritten-letter-alt h1 {
+    font-size: 3em;
+}
+
+.handwritten-letter-alt h2 {
+    font-size: 2.8em;
+}
+
+.handwritten-letter-alt .editor-content>h3 {
+    font-size: 2.4em;
+}
+
+.handwritten-letter-alt .editor-content>p, .handwritten-letter-alt .editor-content>ul {
+    font-size: 2.2em;
+}
+
+/* MEME minimal compatibility */
+
+.handwritten-letter-alt .CodeMirror p, .handwritten-letter-alt .CodeMirror ul {
+    font-family: var(--handwritten-alt-base-font);
+    font-size: 2.2em;
+}
+
+/************************************************
+    Special text and highlights
+************************************************/
+
+/* Modifies Polyglot CSS */
+
+.handwritten-letter-alt .polyglot-journal {
+    background-color: #b38e4c60;
+}
+
+/************************************************
+    Background and various window elements
+************************************************/
+
+/* Background */
+
+.handwritten-letter-alt .window-content {
+    background: var(--handwritten-alt-background-texture-image);
+    background-size: cover;
+}
+
+/*
+    One Journal compatibility
+*/
+
+/* Background with OneJournal */
+
+#OneJournalShell .handwritten-letter-alt.one-journal-attached .window-content {
+    background: var(--handwritten-alt-background-texture-image);
+}
+
+/* Entry title underline with OneJournal */
+
+/* .handwritten-letter-alt.one-journal-attached form input[name="name"] {
+  border-width: 0;
+} */

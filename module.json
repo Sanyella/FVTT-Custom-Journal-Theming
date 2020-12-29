@@ -10,10 +10,12 @@
 		"styles/dark-mode.css",
 		"styles/dark-slate-journal.css",
 		"styles/handwritten-letter.css",
+		"styles/handwritten-letter-alt.css",
 		"styles/royal-journal.css",
 		"styles/sci-fi-one-journal.css",
 		"styles/sci-fi-two-journal.css",
 		"fonts/Anglo-text/stylesheet.css",
+		"fonts/Learning-Curve/style.css",
 		"fonts/Lovers-Quarrel/stylesheet.css",
 		"fonts/Montserrat-Regular/style.css",
 		"fonts/Play-Regular/style.css"

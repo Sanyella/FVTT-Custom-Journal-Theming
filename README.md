@@ -71,9 +71,15 @@ awesomness and in such an open way, with code easy to navigate and understand.
 
 ### Fonts
 
+Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+
+Learning Curve font: https://bvfonts.com/fonts/details.php?id=76
+
 Lovers Quarrel font: https://fonts.google.com/specimen/Lovers+Quarrel
 
-Anglo-text font: https://www.1001fonts.com/anglo-text-font.html
+Montserrat font: https://fonts.google.com/specimen/Montserrat
+
+Play font: https://fonts.google.com/specimen/Play
   
 ### Textures
 
