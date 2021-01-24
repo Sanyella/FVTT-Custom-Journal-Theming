@@ -92,9 +92,9 @@ body {
     color: var(--template-base-text-color);
 }
 
-/* bullet-point list */
+/* lists */
 
-.template-journal .editor-content>ul {
+.template-journal .editor-content>ul, .template-journal .editor-content>ol {
     color: var(--template-base-text-color);
 }
 

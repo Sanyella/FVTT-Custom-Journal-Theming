@@ -1,8 +1,10 @@
 # 1.3.0
 
-Finally found some time to be working on this again, bringing some fresh additions to Custom Journal, including:
+Finally found some time to be working on this again, bringing some fresh additions to Custom Journal! These include:
 
-- A second Handwritten style with a cleaner (easier to read) font, *Learning Curve* by Jess Latham, recommended DrDoomPL for Polish characters support.
+- The collection grows! A second Handwritten style with a new font, *Learning Curve* by Jess Latham, recommended by DrDoomPL for Polish characters support.
+
+- Applied proper text colors to numbered lists for all themes.
 
 # 1.2.1
 

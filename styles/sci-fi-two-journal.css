@@ -57,9 +57,9 @@ body {
     font-family: 'Montserrat-Regular';
 }
 
-/* bullet-point list */
+/* lists */
 
-.sci-fi-two-journal .editor-content>ul {
+.sci-fi-two-journal .editor-content>ul, .sci-fi-two-journal .editor-content>ol {
     color: var(--sci-fi-two-journal-base-text-color);
 }
 

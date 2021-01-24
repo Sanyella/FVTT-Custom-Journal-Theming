@@ -52,9 +52,9 @@ body {
     color: var(--dark-slate-journal-base-text-color);
 }
 
-/* bullet-point list */
+/* lists */
 
-.dark-slate-journal .editor-content>ul {
+.dark-slate-journal .editor-content>ul, .dark-slate-journal .editor-content>ol {
     color: var(--dark-slate-journal-base-text-color);
 }
 

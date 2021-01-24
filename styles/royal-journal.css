@@ -110,9 +110,9 @@ body {
     color: var(--royal-journal-base-text-color);
 }
 
-/* bullet-point list */
+/* lists */
 
-.royal-journal .editor-content>ul {
+.royal-journal .editor-content>ul, .royal-journal .editor-content>ol {
     color: var(--royal-journal-base-text-color);
 }
 
