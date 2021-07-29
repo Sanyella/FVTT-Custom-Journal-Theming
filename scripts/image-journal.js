@@ -16,24 +16,24 @@ export class ImageJournal extends DocumentSheet {
 		return this.object.getFlag('custom-journal', flag);
 	}
 
-	setFlag(flag, value) {
+	async setFlag(flag, value) {
 		return this.object.setFlag('custom-journal', flag, value);
 	}
 
-	setDefaultFlag(flag, value) {
-		if (this.object.getFlag('custom-journal', flag) === undefined) this.object.setFlag('custom-journal', flag, value);
+	async setDefaultFlag(flag, value) {
+		if (this.object.getFlag('custom-journal', flag) === undefined) return this.object.setFlag('custom-journal', flag, value);
 	}
 
-	setDefaultFlags() {
-		this.setDefaultFlag('img', '');
-		this.setDefaultFlag('opacity', '1');
-		this.setDefaultFlag('locked', true);
-		this.setDefaultFlag('draggable', false);
-		this.setDefaultFlag('image_position', { width: 0, height: 0, top: 0, left: 0 });
-		this.setDefaultFlag('editor_position', { width: 0, height: 0, top: 0, left: 0 });
-		this.setDefaultFlag('text-color', '#ffffff');
-		this.setDefaultFlag('image_rotation', '0');
-		this.setDefaultFlag('editor_rotation', '0');
+	async setDefaultFlags() {
+		await this.setDefaultFlag('img', '');
+		await this.setDefaultFlag('opacity', '1');
+		await this.setDefaultFlag('locked', true);
+		await this.setDefaultFlag('draggable', false);
+		await this.setDefaultFlag('image_position', { width: 0, height: 0, top: 0, left: 0 });
+		await this.setDefaultFlag('editor_position', { width: 0, height: 0, top: 0, left: 0 });
+		await this.setDefaultFlag('text-color', '#ffffff');
+		await this.setDefaultFlag('image_rotation', '0');
+		await this.setDefaultFlag('editor_rotation', '0');
 	}
 
 	/** @inheritdoc */
@@ -58,6 +58,8 @@ export class ImageJournal extends DocumentSheet {
 	}
 
 	async _render(force, options = {}) {
+		let reset = false;
+		if (!this.getFlag('image_position')) reset = true;
 		this.setDefaultFlags();
 
 		if (!this.object.compendium && !this.object.testUserPermission(game.user, this.options.viewPermission)) {
@@ -164,6 +166,8 @@ export class ImageJournal extends DocumentSheet {
 		// Restore prior scroll positions
 		//if (this.options.scrollY) this._restoreScrollPositions(html);
 		this._state = states.RENDERED;
+
+		if (reset) this.resetPosition();
 	}
 
 	async _onRender(html, options, renderinner) {
