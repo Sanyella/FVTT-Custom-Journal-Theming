@@ -1,0 +1,47 @@
+<form autocomplete="off">
+
+    <div>
+        Select the configuration
+    </div>
+    <hr>
+
+    <div class="form-group">
+        <label>Name</label>
+        <div class="form-fields">
+            <input type="text" id="name" name="name" placeholder="Name" value="{{name}}"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Background Image</label>
+        <div class="form-fields">
+            {{filePicker target="img" type="imagevideo"}}
+            <input class="image" type="text" id="img" name="img" placeholder="{{localize 'File Path'}}" value="{{img}}"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+		<label>Opacity</label>
+        <input type="range" id="opacity" name="opacity" min="0" max="1" step="0.05" value="{{opacity}}" />
+        <span class="range-value"></span>
+	</div>
+
+    <div class="form-group">
+		<label>Text Color</label>
+		<input type="text" class="color" id="textcolor" name="textcolor" placeholder="#ffffff" value="{{textcolor}}" />
+        <input type="color" value="{{textcolor}}" data-edit="textcolor"/>
+    </div>
+
+    <div class="form-group">
+		<label>Image Rotation</label>
+        <input type="range" id="image-rotation" name="image-rotation" min="-180" max="180" step="1" value="{{imageRotation}}" />
+        <span class="range-value"></span>
+	</div>
+
+    <div class="form-group">
+		<label>Editor Rotation</label>
+        <input type="range" id="editor-rotation" name="editor-rotation" min="-180" max="180" step="1" value="{{editorRotation}}" />
+        <span class="range-value"></span>
+	</div>
+    
+</form>

@@ -1,0 +1,128 @@
+.custom-image-app {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	position: absolute;
+	padding: 0;
+	z-index: 100;
+}
+
+.custom-image-app #editor {
+	position: absolute;
+	top: calc(23px + 25%);
+	left: 35%;
+	width: 252px;
+	height: 301px;
+}
+
+.custom-image-app .editor {
+	width: 100%;
+	height: 100%;
+}
+
+.custom-image-app .editor-content {
+	overflow-x: hidden;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.background-image {
+	position: relative;
+	border: none;
+	max-width: 1000px;
+	max-height: 600px;
+}
+
+.stripes {
+	--stripe-size: 20px;
+	--color1: #00000044;
+	--color2: #ffffff44;
+	--duration: 2s;
+	outline: yellow solid;
+	background: repeating-linear-gradient(45deg, var(--color1) 25%, var(--color1) 50%, var(--color2) 50%, var(--color2) 75%);
+	background-size: var(--stripe-size) var(--stripe-size);
+	animation: stripeTransform var(--duration) linear infinite;
+}
+
+@keyframes stripeTransform {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: calc(var(--stripe-size) * -1) 0;
+	}
+}
+
+.custom-image-buttons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.custom-image-buttons a {
+	z-index: 100;
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-shadow: black 0px 0px 3px;
+	color: white;
+	font: 1.5em 'Modesto condensed';
+}
+
+.custom-image-buttons a:hover {
+	text-shadow: red 0px 0px 10px;
+}
+
+.letter-circle {
+	background: #ff0000;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 50%;
+	font-size: 35px;
+}
+
+.custom-image-app img {
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+.custom-image-app .window-resizable-handle {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	color: #000;
+	padding: 2px;
+	border: 1px solid #111;
+	border-radius: 4px 0 0 0;
+}
+
+.custom-image-app .window-rotation-handle {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: -23px;
+	background: #fff;
+	color: #000;
+	padding: 2px;
+	border: 1px solid #111;
+	border-radius: 0 4px 4px 0;
+}
+
+.custom-image-app .window-resizable-handle i.fas {
+	transform: rotate(45deg);
+}
+
+.custom-image-app .editor-edit {
+	color: black;
+}
