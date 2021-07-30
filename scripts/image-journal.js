@@ -60,7 +60,7 @@ export class ImageJournal extends DocumentSheet {
 	async _render(force, options = {}) {
 		let reset = false;
 		if (!this.getFlag('image_position')) reset = true;
-		this.setDefaultFlags();
+		await this.setDefaultFlags();
 
 		if (!this.object.compendium && !this.object.testUserPermission(game.user, this.options.viewPermission)) {
 			if (!force) return; // If rendering is not being forced, fail silently
