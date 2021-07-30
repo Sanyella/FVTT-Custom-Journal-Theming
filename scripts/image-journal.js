@@ -167,7 +167,10 @@ export class ImageJournal extends DocumentSheet {
 		//if (this.options.scrollY) this._restoreScrollPositions(html);
 		this._state = states.RENDERED;
 
-		if (reset) this.resetPosition();
+		if (reset) {
+			await this.resetPosition();
+			this.savePosition();
+		}
 	}
 
 	async _onRender(html, options, renderinner) {
