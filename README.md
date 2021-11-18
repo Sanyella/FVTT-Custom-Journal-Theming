@@ -1,6 +1,6 @@
 # FVTT Custom Journal Theming - The Journals of your Dreams!
 
-> **IF YOU ARE STILL ON 1.0.11 OR LOWER, YOU WILL MOST LIKELY HAVE TO REINSTALL MANUALLY, SINCE I MADE A MISTAKE IN THE MANIFEST LINK, BREAKING THE USUAL UPDATE PROCESS. SORRY ABOUT THE INCONVENIENCE!**
+> **Please note that, as this is written, I am no longer maintaining this, and have not for a while. Whoever feels like forking the repo and toying with it is more than welcome to do so. I haven't found how to remove/deprecate this on the official places beyond the versioning already outdated, but if admins are going through this, this can safely be unlisted, from my point of view. Thanks everyone, and happy gaming!**
 
 Welcome to your own personal playground to design your own wonderful-looking journals! 
 Not only did I want to make journals more interesting, I also wanted to to allow them
